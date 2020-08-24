@@ -769,7 +769,6 @@ ul.user-field li {
 
 .slider-top, .slider-wrap, .text-block {
     margin-left: -15px;
-    margin-right: -15px;
 }
 
 .slider-top .slick-prev {
@@ -1187,7 +1186,7 @@ footer .fa {
     }
 
     .navbar {
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     .navbar-nav {
