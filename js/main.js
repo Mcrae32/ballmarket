@@ -104,6 +104,7 @@ setTimeout( function(){
 }, 1000);
 
 //sub-menu
+/*
 var sectionCatalog = document.getElementsByClassName('assort-section');
 var subMenu = document.getElementsByClassName('sub-menu');
 for (var i = 0; i < sectionCatalog.length; i++) {
@@ -112,99 +113,49 @@ for (var i = 0; i < sectionCatalog.length; i++) {
 }
 
 function showSub(e) {
-    //this.childNodes[3].classList.add('active');
+    this.childNodes[3].classList.add('active');
     
     
 }
 
 function hideSub(e) {
-    if(this.childNodes[3].classList.contains(subMenu) ) {
-       
+    if(this.childNodes[3].classList.contains("subMenu") ) {
+		this.childNodes[3].classList.remove('active');
     } else {
        return false;
     }
 }
+*/
 
 /*
-function initMenuEvents() {
-	const menus = document.querySelectorAll('.menu');
-	menus.forEach(function(menu) {
-		menu.addEventListener('mouseenter', function(evt) {
-			if (menu.parentElement.classList.contains('menu__wrapper')) {
-				menu.parentElement.parentElement.classList.add('menu__item--expanded');
-			}
-			menu.dispatchEvent(new Event('menuitemexpanded'));
-		});
-		menu.addEventListener('mouseleave', function(evt) {
-			if (menu.parentElement.classList.contains('menu__wrapper')) {
-				menu.parentElement.parentElement.classList.remove('menu__item--expanded');
-			}
-			for (let i = 0; i < menu.children.length; i ++) {
-				let child = menu.children.item(i);
-				child.classList.remove('menu__item--focused');
-				clearTimeout(child.timerId);
-			}
-			menu.dispatchEvent(new Event('menuitemcollapsed'));
-		});
-	});
+$( function() {
+	$( "#menu" ).menu();
+});
 
-	const items = document.querySelectorAll('.menu__item');
-	items.forEach(function(item) {
-		let timeoutMs = 70;
-		item.addEventListener('mouseenter', function(evt) {
 
-			item.timerId = setTimeout(function() {
+$( "#menu" ).menu({
+	position: { 
+		my: "left top", 
+		at: "right-5 top+5" 
+	}
+});
 
-				item.dispatchEvent(new Event('mouseentermenu'));
+// Getter
+//var position = $( "#menu" ).menu( "option", "position" );
+ 
+// Setter
+//$( "#menu" ).menu( "option", "position", { my: "left top", at: "right-5 top+5" } );
+*/
 
-				for (let i = 0; i < item.parentElement.children.length; i++) {
-
-					let child = item.parentElement.children.item(i);
-
-					if (child.classList.contains('menu__item--expanded')) {
-
-						return;
-					}
-				}
-
-				if (!$('.menu--promo .menu__item--focused').hasClass('menu__item--expanded')) {
-
-					$('.menu--promo .menu__item--focused').removeClass('menu__item--focused');
-				}
-				item.classList.add('menu__item--focused');
-				item.dispatchEvent(new Event('menuitemfocused'));
-			}, timeoutMs);
-		});
-
-		item.addEventListener('mouseleave', function(evt) {
-
-			this.dispatchEvent(new Event('menuitemlostfocus'));
-
-			if (item.timerId) {
-
-				clearTimeout(item.timerId);
-			}
-
-			if (!this.closest('.menu--promo')) {
-
-				this.classList.remove('menu__item--focused');
-			}
-		});
-	});
-}
-
-function emulateMenuTouch() {
-	const items = document.querySelectorAll('.menu__item--parent');
-	items.forEach(function(item) {
-		item.addEventListener('touchstart', function(evt) {
-			if (!item.classList.contains('menu__item--focused')) {
-				evt.preventDefault();
-				item.dispatchEvent(new Event('mouseenter'));
-			}
-		});
-	});
-}
-
+$( function() {
+	$( "#menu" ).menu();
+});
+/*
+$(".sub-menu").position({
+	my: "left top",  // место на позиционируемом элементе
+	at: "left top",  // место на элементе относительно которого будет позиционирование
+	of: ".home-page-menu-wrap"        // элемент относительно которого будет позиционирование
+});
 */
 
 

@@ -633,7 +633,7 @@ ul.user-field li {
     font-weight: bold;
     letter-spacing: 0.78px;
     display: block;
-    padding: 3.2px 5px;    
+    padding: 3.2px 5px 5px;    
 }
 
 .home-page-menu-wrap ul li a:hover,
@@ -649,19 +649,19 @@ ul.user-field li {
 }
 
 .sub-menu {
-    display: none;
+    position: absolute;
+    left: calc(14% + 0px);
     background-color: white;
     box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.26);
     padding: 23px 26px 30px;
-    overflow: hidden; 
-    opacity: 0;
+    overflow: hidden;
+    opacity: 1;
     transition: all 0.5s ease-in;
+    width: 842px;
+    z-index: 3;
+    top: -17px;
 }
 
-.sub-menu.active {
-    display: block;
-    opacity: 1;
-}
 
 .home-page-menu-wrap .sub-menu .menu-desctop-sub-menu .firsl-level {
     color: #323232;
@@ -1161,6 +1161,12 @@ footer .fa {
         font-weight: bold;
         align-items: flex-end;
         display: flex;
+    }
+
+    .sub-menu {
+        top: -17px;
+        left: calc(18% + 0px);
+        width: 706px;        
     }
 }
 
