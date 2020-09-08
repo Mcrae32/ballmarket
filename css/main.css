@@ -164,7 +164,7 @@ ul.user-field li {
     margin: 0 0 0 0.075rem;
 }
 
-.header-search .input-group-text a {
+.header-search .input-group-text {
     color: white;
 }
 
@@ -622,6 +622,7 @@ ul.user-field li {
 
 .home-page-menu-wrap ul li {
     border-bottom: solid 1px #e0dcdc;
+    position: relative;
 }
 .home-page-menu-wrap ul li:last-child {
     border-bottom: 0px;
@@ -650,7 +651,6 @@ ul.user-field li {
 
 .sub-menu {
     position: absolute;
-    left: calc(14% + 0px);
     background-color: white;
     box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.26);
     padding: 23px 26px 30px;
@@ -659,7 +659,9 @@ ul.user-field li {
     transition: all 0.5s ease-in;
     width: 842px;
     z-index: 3;
-    top: -17px;
+    top: -77px;
+    left: 216px;
+    margin-left: 30px;
 }
 
 
@@ -1112,7 +1114,8 @@ footer .fa {
     .sub-menu {
         position: absolute;
         top: -1px;
-        left: calc(100% + 0px);
+        /*left: calc(100% + 0px);*/
+        left:239px;
         padding: 18px 32px 32px 32px;
         width: 840px;
         z-index: 1000;
@@ -1164,8 +1167,10 @@ footer .fa {
     }
 
     .sub-menu {
-        top: -17px;
-        left: calc(18% + 0px);
+        /*top: -17px;*/
+        /*#left: calc(18% + 0px);*/
+        top: -1px;
+        left: 239px;
         width: 706px;        
     }
 }

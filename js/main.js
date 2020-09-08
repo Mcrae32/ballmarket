@@ -94,14 +94,16 @@ $('.image-photo-slider-nav').slick({
 });
 
 //tabs load
-var wrapTab = document.getElementById("myTabContent");
-var elemTab = wrapTab.getElementsByClassName("tab-pane");
+if($("#myTabContent .tab-pane").length){
+    var wrapTab = document.getElementById("myTabContent");
+    var elemTab = wrapTab.getElementsByClassName("tab-pane");
 
-setTimeout( function(){
-    for (var i = 0; i < elemTab.length; i++) {
-        elemTab[i].style.display = "";
-    }
-}, 1000);
+    setTimeout( function(){
+        for (var i = 0; i < elemTab.length; i++) {
+            elemTab[i].style.display = "";
+        }
+    }, 1000);
+}
 
 //sub-menu
 /*
@@ -147,9 +149,9 @@ $( "#menu" ).menu({
 //$( "#menu" ).menu( "option", "position", { my: "left top", at: "right-5 top+5" } );
 */
 
-$( function() {
-	$( "#menu" ).menu();
-});
+//$( function() {
+	//$( "#menu" ).menu();
+//});
 /*
 $(".sub-menu").position({
 	my: "left top",  // место на позиционируемом элементе
