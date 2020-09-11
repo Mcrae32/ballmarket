@@ -255,6 +255,20 @@ ul.user-field li {
     height: 90%;      
 }
 
+.rectangle-flag {
+    display: block;
+    width: 65px;
+    height: 61px;
+    margin-bottom: -2rem;
+    z-index: 10;
+    position: relative;
+    margin-left: -0.4rem;
+}
+
+#fancybox-close {
+    right: -15%;
+}
+
 .filter-wrap .form-group {
     display: flex;
     margin-bottom: 0.5rem;

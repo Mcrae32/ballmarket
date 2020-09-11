@@ -105,6 +105,15 @@ if($("#myTabContent .tab-pane").length){
     }, 1000);
 }
 
+//fancybox
+$(document).ready(function() {
+    $("a.gallery").fancybox({
+        'titlePosition'		: 'outside',
+        'overlayColor'		: '#000',
+        'overlayOpacity'	: 0.5
+    });
+});
+
 //sub-menu
 /*
 var sectionCatalog = document.getElementsByClassName('assort-section');
