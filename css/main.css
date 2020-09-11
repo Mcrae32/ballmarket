@@ -248,7 +248,7 @@ ul.user-field li {
 }
 
 .button-wrap .btn-wrap {
-    margin-top: -40px;    
+    /*margin-top: -40px;    */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -315,10 +315,16 @@ ul.user-field li {
     text-decoration: none;
 }
 
+.panel-catalog {
+    text-align: right;
+}
+
 .panel-catalog p {
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 0.5rem;
+    text-align: right;
+    display: inline-block;
 }
 
 .buttons-wrap {
@@ -343,7 +349,7 @@ ul.user-field li {
 }
 
 .panel-catalog-filter {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     line-height: 1rem;
     justify-content: center;
@@ -355,8 +361,23 @@ ul.user-field li {
     
 }
 
+.price-poz-wrapper { 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.price-poz-wrapper > div {
+    flex: 1;
+    text-align: center;
+}
+
 .panel-catalog-filter p {
     text-align: center;
+}
+
+.form-control-sm {
+    padding: .25rem 0.2rem;
 }
 
 .catalog-wrap .reviews-position .img-block,
@@ -418,11 +439,11 @@ ul.user-field li {
     border: 0;
     border-radius: 0;
     margin: 0rem 1rem 0 0;
-    padding: 8px 5px 15px 5px;
+    padding: 0px 10px 0px 10px;
 }
 
 .positions-filter-wrap {
-    margin-bottom: -65px;
+    /*margin-bottom: -65px;*/
 }
 
 .positions-filter-wrap.down {
@@ -1164,7 +1185,7 @@ footer .fa {
     }
 
     .buttons-wrap .btn-wrap-small .btn.all {
-        padding: 15px 2px;
+        padding: 20px 2px;
     }
 
     .slider-sales-leader .nav-pills .nav-link {
@@ -1435,5 +1456,18 @@ footer .fa {
     .slider-top {
         margin-left: -15px;
         margin-right: -15px;
+    }
+}
+
+@media (max-width: 370px) {
+    .panel-catalog-filter p {
+        margin-bottom: 0.3rem;
+        font-size: 0.8rem;
+    }
+
+    .panel-catalog-filter .row .col {
+        padding: 0;
+        font-size: 0.8rem;
+        text-align: right;
     }
 }
