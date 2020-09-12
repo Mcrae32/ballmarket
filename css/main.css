@@ -254,7 +254,6 @@ ul.user-field li {
     justify-content: flex-end;
     height: 90%;      
 }
-
 .rectangle-flag {
     display: block;
     width: 65px;
@@ -264,11 +263,6 @@ ul.user-field li {
     position: relative;
     margin-left: -0.4rem;
 }
-
-#fancybox-close {
-    right: -15%;
-}
-
 .filter-wrap .form-group {
     display: flex;
     margin-bottom: 0.5rem;
@@ -1484,4 +1478,31 @@ footer .fa {
         font-size: 0.8rem;
         text-align: right;
     }
+}
+
+
+button.buy_on
+{
+	background: #fff url(../images/buy_on.gif) no-repeat;
+	width:30px;
+	height:24px;
+	border:0px;
+	cursor:pointer;
+}
+button.buy_off
+{
+	background: #fff url(../images/buy_off.gif) no-repeat;
+	width:30px;
+	height:24px;
+	border:0px;
+	cursor:pointer;
+}
+
+button.del
+{
+	background: #fff url(../images/del.gif) no-repeat;
+	width:20px;
+	height:20px;
+	border:0px;
+	cursor:pointer;
 }
