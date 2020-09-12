@@ -76,7 +76,7 @@ $('.leader-positiions-wrap').slick({
         }
     ]
 });
-
+/*
 $('.image-photo-slider').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -92,6 +92,7 @@ $('.image-photo-slider-nav').slick({
 	centerMode: false,
 	focusOnSelect: true
 });
+*/
 
 //tabs load
 if($("#myTabContent .tab-pane").length){

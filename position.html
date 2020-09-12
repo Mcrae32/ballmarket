@@ -8,12 +8,14 @@
 	<meta name="apple-mobile-web-app-title" content="Интернет-портал BallMarket.ru">
 	<meta property="og:site_name" content="Интернет-портал BallMarket.ru">
     <title>Интернет-портал BallMarket.ru</title>    
-    
+    <!--fansybox--> 
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="screen">
     <!--Slick slider-->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/main.css">
     <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
 </head>
@@ -221,26 +223,23 @@
                                     <div class="img-block">
                                         <img src="images/Rectangle.png" class="new-items img-fluid" alt="Новинка">
                                         <div class="image-photo-slider">
-                                            <div>
+                                            <a class="gallery" data-fancybox="images" href="images/assortment/ball-big.png" title='Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый'>
                                                 <img src="images/assortment/ball-big.png" class="img-fluid" alt="Мяч ганд. " adidas="" stabil="" replique"="" арт.cd8588,="" р.3,="" ПУ,лат.="" кам.,="" руч.сш,="" бирюзово-сине-оранжевый"="">
-                                            </div>
-                                            <div>
-                                                <img src="images/assortment/ball-big.png" class="img-fluid" alt="Мяч ганд. " adidas="" stabil="" replique"="" арт.cd8588,="" р.3,="" ПУ,лат.="" кам.,="" руч.сш,="" бирюзово-сине-оранжевый"="">
-                                            </div>
-                                            <div>
-                                                <img src="images/assortment/ball-big.png" class="img-fluid" alt="Мяч ганд. " adidas="" stabil="" replique"="" арт.cd8588,="" р.3,="" ПУ,лат.="" кам.,="" руч.сш,="" бирюзово-сине-оранжевый"="">
-                                            </div>
+                                            </a>
                                         </div>
                                         <div class="image-photo-slider-nav">
-                                            <div class="img-nav">
+                                            <a class="gallery" data-fancybox="images" href="images/assortment/ball-big.png" title='Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый'>
                                                 <img src="images/assortment/ball-big.png" class="img-fluid" alt="Мяч ганд. " adidas="" stabil="" replique"="" арт.cd8588,="" р.3,="" ПУ,лат.="" кам.,="" руч.сш,="" бирюзово-сине-оранжевый"="">
-                                            </div>
-                                            <div class="img-nav">
+                                            </a>
+                                            <a class="gallery" data-fancybox="images" href="images/assortment/ball-big.png" title='Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый'>
                                                 <img src="images/assortment/ball-big.png" class="img-fluid" alt="Мяч ганд. " adidas="" stabil="" replique"="" арт.cd8588,="" р.3,="" ПУ,лат.="" кам.,="" руч.сш,="" бирюзово-сине-оранжевый"="">
-                                            </div>
-                                            <div class="img-nav">
+                                            </a>
+                                            <a class="gallery" data-fancybox="images" href="images/assortment/ball-big.png" title='Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый'>
                                                 <img src="images/assortment/ball-big.png" class="img-fluid" alt="Мяч ганд. " adidas="" stabil="" replique"="" арт.cd8588,="" р.3,="" ПУ,лат.="" кам.,="" руч.сш,="" бирюзово-сине-оранжевый"="">
-                                            </div>
+                                            </a>
+                                            <!--div class="img-nav">
+                                                <img src="images/assortment/ball-big.png" class="img-fluid" alt="Мяч ганд. " adidas="" stabil="" replique"="" арт.cd8588,="" р.3,="" ПУ,лат.="" кам.,="" руч.сш,="" бирюзово-сине-оранжевый"="">
+                                            </div-->
                                         </div>
                                     </div>
                                     <div class="img-block-previews">
@@ -637,9 +636,16 @@
                         <div class="catalog-wrap">
                             <div class="positions-filter-wrap">
                                 <div class="row">
-                                    <div class="col-12 col-lg-6 offset-lg-6">
+                                    <div class="col col-lg-5">
                                         <div class="panel-catalog">
+                                            <a href="/">
+                                                <img src="images/help.gif" alt="help">
+                                            </a>
                                             <p>Отмеченные товары:</p>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-7">
+                                        <div class="panel-catalog">
                                             <div class="buttons-wrap">
                                                 <div class="btn-wrap-small">
                                                     <a href="/" class="btn all">Сравнить</a>
@@ -652,24 +658,46 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="panel-catalog-filter d-none d-sm-none d-md-none d-lg-block">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <p>Наличие на складе</p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p>Оптовая<br>(руб) 
-                                                        <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
-                                                        <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
-                                                    </p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p>Заказ</p>
-                                                </div>
-                                                <div class="col-3">
-                                                    Отметить
-                                                </div>
+                                        <div class="panel-catalog-filter d-none d-sm-none d-md-none d-lg-flex">                                            
+                                            <div>
+                                                <p>На<wbr>ли<wbr>чие<wbr> на<wbr> скла<wbr>де</p>
                                             </div>
+                                            <div>
+                                                <p>Опт. (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.1 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.2 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.3 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.4 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Заказ</p>
+                                            </div>
+                                            <div>
+                                                <p>Отме<wbr>тить</p>
+                                            </div>                                            
                                         </div>
                                     </div>
                                 </div>
@@ -677,57 +705,183 @@
                             
                             <div class="position-wrap">
                                 <div class="row">
-                                    <div class="col-12 col-lg-6">
+                                    <div class="col-12 col-lg-5">
                                         <div class="reviews-position">
-                                            <a href="/">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="img-block">
-                                                            <img src="images/Rectangle.png" class="new-items img-fluid" alt="Новинка">
-                                                            <img src="images/assortment/ball1.png" class="img-fluid" alt="Мяч ганд. " adidas="" stabil="" replique"="" арт.cd8588,="" р.3,="" ПУ,лат.="" кам.,="" руч.сш,="" бирюзово-сине-оранжевый"="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="text-block">
-                                                            <h3>Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый</h3>
-                                                            <p>Артикул: <strong>FH7347</strong><br>
-                                                                Кол-во в коробке: <strong>20 шт</strong></p>
-                                                        </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="img-block">
+                                                        <span class="rectangle-flag" style="background: url(images/Rectangle.png)"></span>
+                                                        <a class="gallery" data-fancybox href="images/assortment/ball-big.png" title='Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый'>
+                                                            <img src="images/assortment/ball1.png" class="img-fluid" alt='Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый'>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                            </a>
+                                                <div class="col">
+                                                    <div class="text-block">
+                                                        <h3>Мяч ганд "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый</h3>
+                                                        <p>Артикул: <strong>FH7347</strong><br>
+                                                            Кол-во в коробке: <strong>20 шт</strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
-                                    <div class="col-12 col-lg-6">
-                                        <div class="panel-catalog-filter d-block d-sm-block d-md-block d-lg-none">
+                                    <div class="col-12 col-lg-7">
+                                        <div class="panel-catalog-filter d-flex d-sm-flex d-md-flex d-lg-none">                                            
+                                            <div>
+                                                <p>На<wbr>ли<wbr>чие на скла<wbr>де</p>
+                                            </div>
+                                            <div>
+                                                <p>Опт. (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.1 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.2 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.3 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.4 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Заказ</p>
+                                            </div>
+                                            <div>
+                                                <p>Отме<wbr>тить</p>
+                                            </div>                                            
+                                        </div>
+                                        <div class="price-position">
+                                            <div class="price-poz-wrapper">
+                                                <div>47</div>                                                
+                                                <div>38</div>
+                                                <div>38</div>
+                                                <div>38</div>
+                                                <div>38</div>
+                                                <div>38</div>
+                                                <div>
+                                                    <input type="text" class="form-control form-control-sm" value="0">
+                                                    <button 
+                                                        type="submit" 
+                                                        class="buy_off" 
+                                                        name="command"
+                                                        value="add2basket"
+                                                    ></button>
+                                                </div>
+                                                <div>
+                                                    <input class="form-check-input" name="SelElement[]" value="" type="checkbox" />
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-wrap">
+                                <div class="row">
+                                    <div class="col-12 col-lg-5">
+                                        <div class="reviews-position">
+                                            
                                             <div class="row">
-                                                <div class="col-3">
-                                                    <p>Наличие на складе</p>
+                                                <div class="col-4">
+                                                    <div class="img-block">
+                                                        <a class="gallery" data-fancybox href="images/assortment/ball-big.png" title='Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый'>
+                                                            <img src="images/assortment/ball1.png" class="img-fluid" alt='Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый'>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <p>Оптовая<br>(руб) 
-                                                        <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
-                                                        <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
-                                                    </p>
+                                                <div class="col">
+                                                    <div class="text-block">
+                                                        <h3>Мяч ганд "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый</h3>
+                                                        <p>Артикул: <strong>FH7347</strong><br>
+                                                            Кол-во в коробке: <strong>20 шт</strong></p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <p>Заказ</p>
-                                                </div>
-                                                <div class="col-3">
-                                                    Отметить
-                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-7">
+                                        <div class="panel-catalog-filter d-flex d-sm-flex d-md-flex d-lg-none">                                            
+                                            <div>
+                                                <p>На<wbr>ли<wbr>чие<wbr> на<wbr> скла<wbr>де</p>
+                                            </div>
+                                            <div>
+                                                <p>Опт. (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.1 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.2 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.3 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.4 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Заказ</p>
+                                            </div>
+                                            <div>
+                                                <p>Отме<wbr>тить</p>
                                             </div>
                                         </div>
                                         <div class="price-position">
-                                            <div class="row">
-                                                <div class="col">47</div>
-                                                <div class="col">38</div>
-                                                <div class="col">
+                                            <div class="price-poz-wrapper">
+                                                <div>1265</div>                                                
+                                                <div>1265</div>
+                                                <div>1265</div>
+                                                <div>1265</div>
+                                                <div>1265</div>
+                                                <div>1265</div>
+                                                <div>
                                                     <input type="text" class="form-control form-control-sm" value="0">
+                                                    <button 
+                                                        type="submit" 
+                                                        class="buy_on" 
+                                                        name="command"
+                                                        value="add2basket"
+                                                    ></button>
+                                                    
                                                 </div>
-                                                <div class="col">
-                                                    <span class="icons"><img src="images/shopping-basket.png" class="img-fluid" alt=""></span>
-                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <div>
+                                                    <input class="form-check-input" name="SelElement[]" value="" type="checkbox" />
                                                 </div>
                                             </div>
                                         </div>
@@ -736,116 +890,91 @@
                             </div>
                             <div class="position-wrap">
                                 <div class="row">
-                                    <div class="col-12 col-lg-6">
+                                    <div class="col-12 col-lg-5">
                                         <div class="reviews-position">
-                                            <a href="/">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="img-block">
-                                                            <img src="images/Rectangle.png" class="new-items img-fluid" alt="Новинка">
-                                                            <img src="images/assortment/ball1.png" class="img-fluid" alt="Мяч ганд. " adidas="" stabil="" replique"="" арт.cd8588,="" р.3,="" ПУ,лат.="" кам.,="" руч.сш,="" бирюзово-сине-оранжевый"="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="text-block">
-                                                            <h3>Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый</h3>
-                                                            <p>Артикул: <strong>FH7347</strong><br>
-                                                                Кол-во в коробке: <strong>20 шт</strong></p>
-                                                        </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="img-block">
+                                                        <span class="rectangle-flag" style="background: url(images/Rectangle.png)"></span>
+                                                        <a class="gallery" data-fancybox href="images/assortment/ball-big.png" title='Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый'>
+                                                            <img src="images/assortment/ball1.png" class="img-fluid" alt='Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый'>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                            </a>
+                                                <div class="col">
+                                                    <div class="text-block">
+                                                        <h3>Мяч ганд "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый</h3>
+                                                        <p>Артикул: <strong>FH7347</strong><br>
+                                                            Кол-во в коробке: <strong>20 шт</strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
-                                    <div class="col-12 col-lg-6">
-                                        <div class="panel-catalog-filter d-block d-sm-block d-md-block d-lg-none">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <p>Наличие на складе</p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p>Оптовая<br>(руб) 
-                                                        <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
-                                                        <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
-                                                    </p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p>Заказ</p>
-                                                </div>
-                                                <div class="col-3">
-                                                    Отметить
-                                                </div>
+                                    <div class="col-12 col-lg-7">
+                                        <div class="panel-catalog-filter d-flex d-sm-flex d-md-flex d-lg-none">                                            
+                                            <div>
+                                                <p>На<wbr>ли<wbr>чие<wbr> на<wbr> скла<wbr>де</p>
+                                            </div>
+                                            <div>
+                                                <p>Опт. (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.1 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.2 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.3 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Опт.4 (руб) <br>
+                                                    <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
+                                                    <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>Заказ</p>
+                                            </div>
+                                            <div>
+                                                <p>Отме<wbr>тить</p>
                                             </div>
                                         </div>
                                         <div class="price-position">
-                                            <div class="row">
-                                                <div class="col">47</div>
-                                                <div class="col">38</div>
-                                                <div class="col">
+                                            <div class="price-poz-wrapper">
+                                                <div>1265</div>                                                
+                                                <div>1265</div>
+                                                <div>1265</div>
+                                                <div>1265</div>
+                                                <div>1265</div>
+                                                <div>1265</div>
+                                                <div>
                                                     <input type="text" class="form-control form-control-sm" value="0">
+                                                    <button 
+                                                        type="submit" 
+                                                        class="buy_off" 
+                                                        name="command"
+                                                        value="add2basket"
+                                                    ></button>
+                                                    
                                                 </div>
-                                                <div class="col">
-                                                    <span class="icons"><img src="images/shopping-basket.png" class="img-fluid" alt=""></span>
-                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="position-wrap">
-                                <div class="row">
-                                    <div class="col-12 col-lg-6">
-                                        <div class="reviews-position">
-                                            <a href="/">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="img-block">
-                                                            <img src="images/Rectangle.png" class="new-items img-fluid" alt="Новинка">
-                                                            <img src="images/assortment/ball1.png" class="img-fluid" alt="Мяч ганд. " adidas="" stabil="" replique"="" арт.cd8588,="" р.3,="" ПУ,лат.="" кам.,="" руч.сш,="" бирюзово-сине-оранжевый"="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="text-block">
-                                                            <h3>Мяч ганд. "ADIDAS Stabil Replique" арт.CD8588, р.3, ПУ,лат. кам., руч.сш, бирюзово-сине-оранжевый</h3>
-                                                            <p>Артикул: <strong>FH7347</strong><br>
-                                                                Кол-во в коробке: <strong>20 шт</strong></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <div class="panel-catalog-filter d-block d-sm-block d-md-block d-lg-none">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <p>Наличие на складе</p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p>Оптовая<br>(руб) 
-                                                        <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
-                                                        <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
-                                                    </p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p>Заказ</p>
-                                                </div>
-                                                <div class="col-3">
-                                                    Отметить
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="price-position">
-                                            <div class="row">
-                                                <div class="col">47</div>
-                                                <div class="col">38</div>
-                                                <div class="col">
-                                                    <input type="text" class="form-control form-control-sm" value="0">
-                                                </div>
-                                                <div class="col">
-                                                    <span class="icons"><img src="images/shopping-basket.png" class="img-fluid" alt=""></span>
-                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <div>
+                                                    <input class="form-check-input" name="SelElement[]" value="" type="checkbox" />
                                                 </div>
                                             </div>
                                         </div>
@@ -854,9 +983,16 @@
                             </div>
                             <div class="positions-filter-wrap down">
                                 <div class="row">
-                                    <div class="col-12 col-lg-6 offset-lg-6">
+                                    <div class="col col-lg-5">
                                         <div class="panel-catalog">
+                                            <a href="/">
+                                                <img src="images/help.gif" alt="help">
+                                            </a>
                                             <p>Отмеченные товары:</p>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-7">
+                                        <div class="panel-catalog">
                                             <div class="buttons-wrap">
                                                 <div class="btn-wrap-small">
                                                     <a href="/" class="btn all">Сравнить</a>
@@ -866,25 +1002,6 @@
                                                 </div>
                                                 <div class="btn-wrap-small">
                                                     <a href="/" class="btn all">Добавить в избранное</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel-catalog-filter d-none d-sm-none d-md-none d-lg-block">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <p>Наличие на складе</p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p>Оптовая<br>(руб) 
-                                                        <span><a href="/"><img src="images/Triangle-top-active.png" alt=""></a></span>
-                                                        <span><a href="/"><img src="images/Triangle-bottom.png" alt=""></a></span>
-                                                    </p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p>Заказ</p>
-                                                </div>
-                                                <div class="col-3">
-                                                    Отметить
                                                 </div>
                                             </div>
                                         </div>
@@ -944,14 +1061,15 @@
 
     <!-- Подключаем jQuery -->
     <script src="js/jquery.min.js"></script>    
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    
-    <!--Slick slider-->
-    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Slick slider-->
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="slick/slick.min.js"></script> 
+
+    <script src="js/main.js"></script>
     
 </body>
 </html>
