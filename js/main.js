@@ -45,37 +45,6 @@ $('.slider-brands').slick({
     ]
 });
 
-$('.leader-positiions-wrap').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-		{
-            breakpoint: 991,
-            settings: {
-				arrows: false,
-				slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 767,
-            settings: {
-				arrows: false,
-				slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 576,
-            settings: {
-				arrows: false,
-				slidesToShow: 1,
-				centerMode: true,
-            }
-        }
-    ]
-});
 /*
 $('.image-photo-slider').slick({
 	slidesToShow: 1,
@@ -113,6 +82,42 @@ $(document).ready(function() {
         'overlayColor'		: '#000',
         'overlayOpacity'	: 0.5
     });
+
+    var analogs = $('.leader-positiions-wrap');
+    if(analogs){
+        var analogCount = analogs.data("count");
+        $('.leader-positiions-wrap').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: (analogCount<4 ? analogCount : 4),
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        centerMode: true,
+                    }
+                }
+            ]
+        });
+    }
 });
 
 //sub-menu
