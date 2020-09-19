@@ -104,7 +104,7 @@ a {
 }
 
 .header-top {
-  height: 35px;
+  min-height: 35px;
   display: flex;
   color: white;
   align-items: center;
@@ -119,6 +119,9 @@ a {
     font-size: 0.9rem;
     color: white;
     padding-left: 25px;
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 .fa {
@@ -371,7 +374,8 @@ ul.user-field li {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    height: 25px;
+    /* height: 25px; */
+    height: 38px;
     margin-bottom: 15px;
 }
 
@@ -1209,7 +1213,7 @@ button.del
 
 @media (max-width: 1200px) { 
     .personal-cart span, .personal-cart a {
-        line-height: 0.8rem;
+        line-height: 0.85rem;
     }
 
     #header-nav ul li a {
@@ -1256,7 +1260,7 @@ button.del
     }
 
     .buttons-wrap .btn-wrap-small .btn.all {
-        padding: 20px 2px;
+        padding: 0px 2px;
     }
 
     .slider-sales-leader .nav-pills .nav-link {
@@ -1297,6 +1301,14 @@ button.del
         display: block;
     }
 
+    .user-wrap-top i.fa-user {
+        display: none;
+    }
+    
+    ul.user-field::before {
+        content: '';
+    }
+
     .header-nav {
         height: auto;
     }
@@ -1325,8 +1337,9 @@ button.del
     #header-nav ul li {
         display: inline-block;
         margin: 0;
-        padding: 0.5rem;
+        padding: 0.5rem 0;
         text-align: right;
+        line-height: 1rem;
     }
 
     .news-wrap-sidebar {
@@ -1412,6 +1425,11 @@ button.del
         padding: 6px;
     }
 
+    .phone-wrap {
+        padding-left: 0px;
+        justify-content: center;
+    }
+
     .slider-brands {
         padding: 15px 15px 0 15px;
     }
@@ -1460,6 +1478,17 @@ button.del
         justify-content: center;
     }
 
+    .header-top {
+        height: 100%;
+        padding: .5rem 0 0.6rem;
+    }
+
+    .header-top input.default {
+        float: right;
+        margin-top: .5rem;
+        margin-left: .5rem;
+    }
+
     
 }
 
@@ -1474,7 +1503,8 @@ button.del
     }
 
     .header-top {
-        height: 70px;
+        height: 100%;
+        padding: .5rem 0 0.6rem;
     }
 
     .search-form {
@@ -1483,7 +1513,7 @@ button.del
 
     .phone-wrap {
         padding-bottom: 5px;
-        text-align: center;
+        justify-content: center;
         padding-left: 0;
     }
 
