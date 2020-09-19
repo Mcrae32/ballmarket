@@ -318,25 +318,30 @@ ul.user-field li {
     border-radius: 0;
 }
 
-.pager-wrap .pagination .page-link {
+.pager-wrap .pagination a {
     border: none;
     background: none;
     color: #323232;
     text-decoration: underline;
-    padding: 0.5rem 0.5rem 1rem 0;
+    padding: 0.5rem 0 1rem 0;
 }
 
-.pager-wrap .pagination .page-link::after {
+.pager-wrap .pagination li::after {
     content: "|";
     display: inline-block;
     margin-left: 5px;
+    font-weight: normal;
 }
 
-.pager-wrap ul.pagination li:last-child a.page-link::after {
+.pager-wrap .pagination li:last-child::after {
     content: "";
 }
 
-.pager-wrap .pagination .page-item.active .page-link {
+.pager-wrap .pagination li{
+    margin-right: 5px;
+}
+
+.pager-wrap .pagination li.active{
     font-weight: bold;
     text-decoration: none;
 }
@@ -1176,19 +1181,19 @@ footer .fa {
 
 button.buy_on
 {
-    background: #fff url(../images/buy_on_1.gif) no-repeat;
+    background: #fff url(../images/buy_on.gif) no-repeat;
     background-position-y: 4px;
 	width:30px;
-	height:24px;
+	height:30px;
 	border:0px;
 	cursor:pointer;
 }
 button.buy_off
 {
-    background: #fff url(../images/buy_off_1.gif) no-repeat;
+    background: #fff url(../images/buy_off.gif) no-repeat;
     background-position-y: 4px;
 	width:30px;
-	height:24px;
+	height:30px;
 	border:0px;
 	cursor:pointer;
 }
@@ -1486,7 +1491,7 @@ button.del
         border: none;
     }
 
-    .pager-wrap .pagination .page-link::after {
+    .pager-wrap .pagination li::after {
         content: "";
     }
 
@@ -1564,4 +1569,24 @@ button.buy_off {
     }
 }
 
+
+.auth-page{
+    max-width: 900px;
+    margin: auto;
+}
+.reg-form, .auth-form{
+    max-width: 400px;
+    
+}
+.reg-form {
+    margin-top: 25px;
+}
+
+.reg-form label, .auth-form label{
+    font-weight: bold;
+}
+
+.required{
+    color: red;
+}
 
