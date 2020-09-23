@@ -22,8 +22,7 @@
     </script>
     <script src="js/vue.min.js"></script> 
     <script src="js/catalog-menu.js"></script> 
-    <script src="js/catalog-menu-mobile.js"></script> 
-      
+    <script src="js/catalog-menu-mobile.js"></script>    
 </head>
 <body>
     <header>
@@ -37,11 +36,36 @@
                     </div>                    
                     <div class="col-sm-12 col-md-8">
                         <div class="user-wrap-top">
-                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <!--i class="fa fa-user" aria-hidden="true"></i>
                             <ul class="user-field">
                                 <li><a href="/">Войти</a></li>
                                 <li>/</li>
                                 <li><a href="/">Регистрация</a></li>
+                            </ul-->
+                            <a class="message-user" href="/personal/messages/"  data-title="У Вас 42 новых сообщения">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>42</span>
+                            </a>
+                            <button id="user-button">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <ul class="user-field">
+                                    <li class="dropdown">ИП Юркин Илья Сергеевич
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/">Заказы</a></li>
+                                            <li><a href="/">Избранное</a></li>
+                                            <li><a href="/">Скидки</a></li>
+                                            <li><a href="/">Лист ожидания</a></li>
+                                            <li><a href="/">Сменить пароль</a></li>
+                                            <li><a href="/">Выход</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+                        <div class="user-wrap-message">
+                            <ul class="user-field">
+                                <li>Согласно отчету по скидкам, Ваша текущая колонка Оптовая (руб)<br>Cрок действия скидки не ограничен, <a style="font-weight: bold;" href="/discounts/00002998.xls">подробнее см. отчет по скидкам</a><br>Сумма заказа для перехода на колонку Опт 1 (руб): 100000 руб.<br>Если Вы сразу хотите сформировать заказ по колонке отличной от текущей, 
+                                    просьба связаться с Вашим менеджером-куратором по телефону или электронной почте.</li>
                             </ul>
                         </div>
                     </div>                
@@ -543,13 +567,13 @@
             </div>
         </div>
     </footer>
-
+    
     <!-- Подключаем jQuery -->
     <script src="js/jquery.min.js"></script>    
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    
     <!--Slick slider-->
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
 	<script src="slick/slick.min.js"></script> 
