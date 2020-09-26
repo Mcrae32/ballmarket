@@ -177,21 +177,23 @@ $(".sub-menu").position({
 
 //show mobile menu and filter
 $(document).ready(function() {
-    $('.menu-catalog').click( function(){
+    $('.menu-catalog').click( function(event){
+        event.preventDefault();
         $('.home-page-menu-wrap').addClass('mobile_show');
     } )
 
-    $('[data-target="hidden-filters"]').click( function(){
+    $('[data-target="hidden-filters"]').click( function(event){
+        event.preventDefault();
         $('.home-page-menu-wrap').removeClass('mobile_show');
     } )
 
-    $('.flter-catalog-mobile').click( function(){
+    $('.js-show-filter-mobile').click( function(event){
+        event.preventDefault();
         $('.filter-wrap').addClass('mobile_show');
     } )
 
-    $('[data-target="hidden-filters"]').click( function(){
+    $('[data-target="hidden-filters"]').click( function(event){
+        event.preventDefault();
         $('.filter-wrap').removeClass('mobile_show');
     } )
 });
-
-

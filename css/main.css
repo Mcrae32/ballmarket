@@ -377,7 +377,7 @@ li.dropdown:hover > .dropdown-menu {
     /*margin: 0;*/
 }
 
-.mobile-button-wrap button.flter-catalog-mobile {
+.mobile-button-wrap button.filter-catalog-mobile {
     background-color: #f3963e;
     color: white;
     border-color: #f3963e;
@@ -1872,4 +1872,13 @@ option{
 
 option:disabled{
 	color:#bfbbbb;
+}
+
+.brands-wrap{
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.last-level{
+    font-weight: normal !important;
 }
