@@ -1,8 +1,6 @@
-/*
 .container{
-    max-width: initial !important;
+    max-width: 90%;
 }
-*/
 @font-face {
 	font-family: 'PT Sans';
 	src: url('../fonts/PTSans-Bold.eot');
@@ -1091,6 +1089,7 @@ li.dropdown:hover > .dropdown-menu {
     height: 90px;
     display: flex !important;
     padding: 0 5px;
+    height: auto;
 }
 
 .slider-brands div img {
@@ -1166,7 +1165,9 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .block-news > a:hover .img-block {
+    /*
     border-color: #f3963e;
+    */
 }
 
 .block-news > a:hover h3,
