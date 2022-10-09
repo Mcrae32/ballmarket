@@ -1255,8 +1255,136 @@ li.dropdown:hover>.dropdown-menu {
 
 .form-db__col {
     margin-bottom: 8px;
-    min-width: 140px;
-    max-width: 420px;
+    min-width: 204px;
+    max-width: 440px;
+}
+
+.form-db__col .form-check {
+    padding: 0;
+    margin-right: 16px;
+}
+
+.form-db__col .form-check:last-child {
+    margin-right: 0;
+}
+
+.filter-wrap.filter-wrap_reclamation {
+    padding-top: 15px;
+    border: none;
+}
+
+.reclamation {
+    padding: 12px 15px 15px;
+    border: 1px solid #D8D8D8;
+}
+
+.reclamation .nav.nav-tabs {
+    margin-bottom: 30px;
+}
+
+.reclamation a.nav-link {
+    color: #495057;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-decoration: solid;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 16px;
+}
+
+.reclamation a.nav-link:hover,
+.reclamation a.nav-link:focus,
+.reclamation a.nav-link:active {
+    color: #ee7809;
+    border-color: #fff;
+}
+
+.reclamation a.nav-link.active {
+    text-decoration: none;
+    border-color: #fff #fff #F3963E;
+    border-bottom: 4px solid #F3963E;
+}
+
+.filter-wrap_reclamation .nav-tabs li:first-child a.nav-link {
+    margin-left: 0;
+}
+
+.reclamation input {
+    padding: 0 8px;
+}
+
+.reclamation__search {
+    position: relative;
+}
+
+.reclamation__search-button {
+    position: absolute;
+    border: 0;
+    background: none;
+    top: 3px;
+    right: 16px;
+}
+
+.reclamation__button {
+    padding: 4px 8px;
+}
+
+.reclamation .form-group label {
+    line-height: 2em;
+}
+
+.reclamation .reclamation__button:hover,
+.reclamation .reclamation__button:focus,
+.reclamation .reclamation__button:active,
+.reclamation .btn:hover,
+.reclamation .btn:focus,
+.reclamation .btn:active {
+    margin: 0;
+    color: #f3963e;
+    background: white;
+}
+
+.number-of-goods {
+    display: flex;
+}
+
+.number-of-goods .number {
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #ced4da;
+    justify-content: center;
+    position: relative;
+    top: -5px;
+    border-radius: 3px;
+    max-height: 35px;
+    max-width: 140px;
+}
+
+.number-of-goods .number .number__text {
+    border: none;
+    width: 80px;
+    text-align: center;
+}
+
+.number-of-goods a {
+    border-right: 1px solid #999999;
+    padding: 0px 10px 4px;
+    font-size: 1.2rem;
+    color: #000;
+    background: #f2f6f6;
+}
+
+.number-of-goods a:hover,
+.number-of-goods a:focus,
+.number-of-goods a:active {
+    text-decoration: none;
+}
+
+.number-of-goods .number a:last-child {
+    border-right: none;
+    border-left: 1px solid #999999;
 }
 
 footer {
@@ -1673,6 +1801,10 @@ button.del {
         transition: all 0.2s ease-in-out;
     }
 
+    .filter-wrap.filter-wrap_reclamation {
+        position: static;
+    }
+
     .home-page-menu-wrap.mobile_show,
     .filter-wrap.mobile_show {
         right: 0;
@@ -1733,6 +1865,14 @@ button.del {
 
     .filter-wrap .button-wrap {
         display: none;
+    }
+
+    .filter-wrap.filter-wrap_reclamation {
+        padding: 15px 0;
+    }
+
+    .filter-wrap.filter-wrap_reclamation .button-wrap {
+        display: block;
     }
 
     .filter-wrap .brands-wrap.price {
