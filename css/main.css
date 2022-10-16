@@ -1387,6 +1387,13 @@ li.dropdown:hover>.dropdown-menu {
     border-left: 1px solid #999999;
 }
 
+.product-wrap {
+    padding: 15px 0 0;
+    border-top: 2px solid #F3963E;
+    border-bottom: 2px solid #F3963E;
+    margin-bottom: 15px;
+}
+
 footer {
     height: auto;
     background-color: #323232;

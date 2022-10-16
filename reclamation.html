@@ -393,59 +393,94 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="product">Товар</label>
-                                                                </div>
-                                                                <div class="form-db__col col reclamation__search">
-                                                                    <input name="product" type="search" id="product"
-                                                                        tabindex="10"
-                                                                        class="form-control form-control-sm"
-                                                                        placeholder="Поиск">
-                                                                    <button name="search" type="submit" value=""
-                                                                        class="reclamation__search-button">
-                                                                        <img src="images/search_icon.svg">
-                                                                    </button>
-                                                                </div>
-                                                                <div class="form-db__col col button-wrap">
-                                                                    <button class="btn all reclamation__button">+
-                                                                        Добавить
-                                                                        ещё</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="artikul">Артикул</label>
-                                                                </div>
-                                                                <div class="form-db__col col">
-                                                                    <input name="artikul" type="number" id="artikul"
-                                                                        tabindex="11"
-                                                                        class="form-control form-control-sm"
-                                                                        placeholder="">
+
+                                                    <div class="product-wrap">
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="product">Товар</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col reclamation__search">
+                                                                        <input name="product" type="search" id="product"
+                                                                            tabindex="10"
+                                                                            class="form-control form-control-sm"
+                                                                            placeholder="Поиск">
+                                                                        <button name="search" type="submit" value=""
+                                                                            class="reclamation__search-button">
+                                                                            <img src="images/search_icon.svg">
+                                                                        </button>
+                                                                    </div>
+
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-group number-of-goods">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="amount">Количество</label>
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="artikul">Артикул</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <input name="artikul" type="number" id="artikul"
+                                                                            tabindex="11"
+                                                                            class="form-control form-control-sm"
+                                                                            placeholder="">
+                                                                    </div>
                                                                 </div>
-                                                                <div class="form-db__col col">
-                                                                    <div class="number" data-step="1" data-min="1"
-                                                                        data-max="100">
-                                                                        <a class="number-minus" href="#">-</a>
-                                                                        <input class="number__text" type="text"
-                                                                            id="amount" tabindex="12" name="count"
-                                                                            value="1">
-                                                                        <a class="number-plus" href="#">+</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group number-of-goods">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="amount">Количество</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <div class="number" data-step="1" data-min="1"
+                                                                            data-max="100">
+                                                                            <a class="number-minus" href="#">-</a>
+                                                                            <input class="number__text" type="text"
+                                                                                id="amount" tabindex="12" name="count"
+                                                                                value="1">
+                                                                            <a class="number-plus" href="#">+</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="price">Цена</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <input name="price" type="number" id="price"
+                                                                            tabindex="13"
+                                                                            class="form-control form-control-sm"
+                                                                            placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="marriage">Характер брака</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <select tabindex="14" name="marriage"
+                                                                            id="marriage"
+                                                                            class="form-control form-control-sm">
+                                                                            <option value="">(все)</option>
+                                                                            <option value="">Гибридная сшивка</option>
+                                                                            <option value="120">Клееный</option>
+                                                                            <option value="25">Машинная сшивка</option>
+                                                                            <option value="100">Ручная сшивка</option>
+                                                                            <option value="179">Термосшивка</option>
+                                                                        </select>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -455,33 +490,12 @@
                                                         <div class="col">
                                                             <div class="row">
                                                                 <div class="form-db__col col-auto">
-                                                                    <label for="price">Цена</label>
+                                                                    <label for="product">Добавить товар</label>
                                                                 </div>
-                                                                <div class="form-db__col col">
-                                                                    <input name="price" type="number" id="price"
-                                                                        tabindex="13"
-                                                                        class="form-control form-control-sm"
-                                                                        placeholder="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="marriage">Характер брака</label>
-                                                                </div>
-                                                                <div class="form-db__col col">
-                                                                    <select tabindex="14" name="marriage" id="marriage"
-                                                                        class="form-control form-control-sm">
-                                                                        <option value="">(все)</option>
-                                                                        <option value="">Гибридная сшивка</option>
-                                                                        <option value="120">Клееный</option>
-                                                                        <option value="25">Машинная сшивка</option>
-                                                                        <option value="100">Ручная сшивка</option>
-                                                                        <option value="179">Термосшивка</option>
-                                                                    </select>
+                                                                <div class="form-db__col col button-wrap">
+                                                                    <button class="btn all reclamation__button">+
+                                                                        Добавить
+                                                                        ещё</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -646,180 +660,194 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
+                                                    <div class="product-wrap">
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="product">Товар</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col reclamation__search">
+                                                                        <input name="product" type="search" id="product"
+                                                                            tabindex="10"
+                                                                            class="form-control form-control-sm"
+                                                                            placeholder="Поиск">
+                                                                        <button name="search" type="submit" value=""
+                                                                            class="reclamation__search-button">
+                                                                            <img src="images/search_icon.svg">
+                                                                        </button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="artikul">Артикул</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <input name="artikul" type="number" id="artikul"
+                                                                            tabindex="11"
+                                                                            class="form-control form-control-sm"
+                                                                            placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group number-of-goods">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="amount">Количество</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <div class="number" data-step="1" data-min="1"
+                                                                            data-max="100">
+                                                                            <a class="number-minus" href="#">-</a>
+                                                                            <input class="number__text" type="text"
+                                                                                id="amount" tabindex="12" name="count"
+                                                                                value="1">
+                                                                            <a class="number-plus" href="#">+</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="price">Цена</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <input name="price" type="number" id="price"
+                                                                            tabindex="13"
+                                                                            class="form-control form-control-sm"
+                                                                            placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="marriage">Характер брака</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <select tabindex="14" name="marriage"
+                                                                            id="marriage"
+                                                                            class="form-control form-control-sm">
+                                                                            <option value="">(все)</option>
+                                                                            <option value="">Гибридная сшивка</option>
+                                                                            <option value="120">Клееный</option>
+                                                                            <option value="25">Машинная сшивка</option>
+                                                                            <option value="100">Ручная сшивка</option>
+                                                                            <option value="179">Термосшивка</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label>Условия отгрузки</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                tabindex="15" name="terms" id="terms1"
+                                                                                value="option1" checked>
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio1">Отгрузка
+                                                                                ТК</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                tabindex="16" name="terms" id="terms2"
+                                                                                value="option2">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio2">Самовывоз</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                tabindex="17" name="terms" id="terms3"
+                                                                                value="option3">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio2">Доставка
+                                                                                по
+                                                                                Москве</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="date_receipt">Дата получения</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <input name="date_receipt" type="date"
+                                                                            id="date_receipt" tabindex="18"
+                                                                            class="form-control form-control-sm"
+                                                                            placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="date_opening">Дата вскрытия</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <input name="date_opening" type="date"
+                                                                            id="date_opening" tabindex="19"
+                                                                            class="form-control form-control-sm"
+                                                                            placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group number-of-goods">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <div class="form-db__col col-auto">
+                                                                        <label for="amount-doc">Количество по
+                                                                            документу</label>
+                                                                    </div>
+                                                                    <div class="form-db__col col">
+                                                                        <div class="number" data-step="1" data-min="1"
+                                                                            data-max="100">
+                                                                            <a class="number-minus" href="#">-</a>
+                                                                            <input class="number__text" type="text"
+                                                                                id="amount-doc" tabindex="20"
+                                                                                name="amount-doc" value="1">
+                                                                            <a class="number-plus" href="#">+</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <div class="form-group">
                                                         <div class="col">
                                                             <div class="row">
                                                                 <div class="form-db__col col-auto">
-                                                                    <label for="product">Товар</label>
-                                                                </div>
-                                                                <div class="form-db__col col reclamation__search">
-                                                                    <input name="product" type="search" id="product"
-                                                                        tabindex="10"
-                                                                        class="form-control form-control-sm"
-                                                                        placeholder="Поиск">
-                                                                    <button name="search" type="submit" value=""
-                                                                        class="reclamation__search-button">
-                                                                        <img src="images/search_icon.svg">
-                                                                    </button>
+                                                                    <label for="product">Добавить товар</label>
                                                                 </div>
                                                                 <div class="form-db__col col button-wrap">
                                                                     <button class="btn all reclamation__button">+
                                                                         Добавить
                                                                         ещё</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="artikul">Артикул</label>
-                                                                </div>
-                                                                <div class="form-db__col col">
-                                                                    <input name="artikul" type="number" id="artikul"
-                                                                        tabindex="11"
-                                                                        class="form-control form-control-sm"
-                                                                        placeholder="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group number-of-goods">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="amount">Количество</label>
-                                                                </div>
-                                                                <div class="form-db__col col">
-                                                                    <div class="number" data-step="1" data-min="1"
-                                                                        data-max="100">
-                                                                        <a class="number-minus" href="#">-</a>
-                                                                        <input class="number__text" type="text"
-                                                                            id="amount" tabindex="12" name="count"
-                                                                            value="1">
-                                                                        <a class="number-plus" href="#">+</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="price">Цена</label>
-                                                                </div>
-                                                                <div class="form-db__col col">
-                                                                    <input name="price" type="number" id="price"
-                                                                        tabindex="13"
-                                                                        class="form-control form-control-sm"
-                                                                        placeholder="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="marriage">Характер брака</label>
-                                                                </div>
-                                                                <div class="form-db__col col">
-                                                                    <select tabindex="14" name="marriage" id="marriage"
-                                                                        class="form-control form-control-sm">
-                                                                        <option value="">(все)</option>
-                                                                        <option value="">Гибридная сшивка</option>
-                                                                        <option value="120">Клееный</option>
-                                                                        <option value="25">Машинная сшивка</option>
-                                                                        <option value="100">Ручная сшивка</option>
-                                                                        <option value="179">Термосшивка</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label>Условия отгрузки</label>
-                                                                </div>
-                                                                <div class="form-db__col col">
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            tabindex="15" name="terms" id="terms1"
-                                                                            value="option1" checked>
-                                                                        <label class="form-check-label"
-                                                                            for="inlineRadio1">Отгрузка
-                                                                            ТК</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            tabindex="16" name="terms" id="terms2"
-                                                                            value="option2">
-                                                                        <label class="form-check-label"
-                                                                            for="inlineRadio2">Самовывоз</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            tabindex="17" name="terms" id="terms3"
-                                                                            value="option3">
-                                                                        <label class="form-check-label"
-                                                                            for="inlineRadio2">Доставка
-                                                                            по
-                                                                            Москве</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="date_receipt">Дата получения</label>
-                                                                </div>
-                                                                <div class="form-db__col col">
-                                                                    <input name="date_receipt" type="date"
-                                                                        id="date_receipt" tabindex="18"
-                                                                        class="form-control form-control-sm"
-                                                                        placeholder="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="date_opening">Дата вскрытия</label>
-                                                                </div>
-                                                                <div class="form-db__col col">
-                                                                    <input name="date_opening" type="date"
-                                                                        id="date_opening" tabindex="19"
-                                                                        class="form-control form-control-sm"
-                                                                        placeholder="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group number-of-goods">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <div class="form-db__col col-auto">
-                                                                    <label for="amount-doc">Количество по
-                                                                        документу</label>
-                                                                </div>
-                                                                <div class="form-db__col col">
-                                                                    <div class="number" data-step="1" data-min="1"
-                                                                        data-max="100">
-                                                                        <a class="number-minus" href="#">-</a>
-                                                                        <input class="number__text" type="text"
-                                                                            id="amount-doc" tabindex="20"
-                                                                            name="amount-doc" value="1">
-                                                                        <a class="number-plus" href="#">+</a>
-                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
