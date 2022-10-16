@@ -1091,6 +1091,11 @@ li.dropdown:hover>.dropdown-menu {
     margin-bottom: 1rem;
 }
 
+.button-wrap_end {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .btn-wrap {
     display: flex;
     align-items: center;
