@@ -239,5 +239,3 @@ $(document).ready(function () {
         $('.filter-wrap').removeClass('mobile_show');
     })
 });
-
-$('select').selectpicker();
