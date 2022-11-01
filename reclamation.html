@@ -14,8 +14,11 @@
     <!--Slick slider-->
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap-select.css"> -->
 
     <link rel="stylesheet" href="css/main.css">
     <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
@@ -475,24 +478,18 @@
                                                                     <div class="col">
                                                                         <div class="row">
                                                                             <div class="form-db__col col-auto">
-                                                                                <label for="marriage">Характер
-                                                                                    брака</label>
+                                                                                <label for="marriage">Характер брака</label>
                                                                             </div>
                                                                             <div class="form-db__col col">
-                                                                                <select tabindex="14" name="marriage"
-                                                                                    id="marriage"
-                                                                                    class="form-control form-control-sm">
-                                                                                    <option value="">(все)</option>
-                                                                                    <option value="">Гибридная сшивка
-                                                                                    </option>
-                                                                                    <option value="120">Клееный</option>
-                                                                                    <option value="25">Машинная сшивка
-                                                                                    </option>
-                                                                                    <option value="100">Ручная сшивка
-                                                                                    </option>
-                                                                                    <option value="179">Термосшивка
-                                                                                    </option>
-                                                                                </select>
+                                                                                <input tabindex="14" list="marriage-choice" id="marriage" name="marriage" class="form-control form-control-sm input-data">
+                                                                                <datalist id="marriage-choice">
+                                                                                    <option value="(все)"></option>
+                                                                                    <option value="Гибридная сшивка"></option>
+                                                                                    <option value="Клееный"></option>
+                                                                                    <option value="Машинная сшивка"></option>
+                                                                                    <option value="Ручная сшивка"></option>
+                                                                                    <option value="Термосшивка"></option>
+                                                                                </datalist>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1001,6 +998,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap-select.js"></script> -->
 
     <!--Slick slider-->
     <script src="js/jquery-migrate-1.2.1.min.js"></script>

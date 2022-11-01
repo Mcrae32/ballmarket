@@ -1320,6 +1320,10 @@ li.dropdown:hover>.dropdown-menu {
     padding: 0 8px;
 }
 
+.reclamation input.input-data {
+    line-height: 1;
+}
+
 .reclamation__search {
     position: relative;
 }
