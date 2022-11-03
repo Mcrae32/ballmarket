@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Интернет-портал BallMarket.ru" />
+    <meta name="description" content="Интернет-портал BallMarket.ru" />
+    <meta name="apple-mobile-web-app-title" content="Интернет-портал BallMarket.ru">
+    <meta property="og:site_name" content="Интернет-портал BallMarket.ru">
+    <title>Интернет-портал BallMarket.ru</title>
+    <!--fansybox-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="screen">
+    <!--Slick slider-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap-select.css"> -->
+
+    <link rel="stylesheet" href="css/main.css">
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+
+    <script>
+        const catalogMenuData = { "NEW": { "URL": "\/catalog\/new\/", "NAME": "\u041d\u043e\u0432\u0438\u043d\u043a\u0438", "ID": "new", "IBLOCK_SECTION_ID": "S" }, "SPEC": { "URL": "\/catalog\/spec\/", "NAME": "\u0422\u043e\u0432\u0430\u0440\u044b \u043f\u043e \u0441\u043f\u0435\u0446. \u0446\u0435\u043d\u0430\u043c", "ID": "spec", "IBLOCK_SECTION_ID": "S" }, "S558": { "URL": "\/catalog\/558\/", "NAME": "\u0424\u0423\u0422\u0411\u041e\u041b\/\u0424\u0423\u0422\u0417\u0410\u041b", "ID": "S558", "IBLOCK_SECTION_ID": "S", "SELECTED": true, "SUBMENU": { "S578": { "URL": "\/catalog\/578\/", "NAME": "\u041c\u044f\u0447\u0438 \u0444\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S578", "IBLOCK_SECTION_ID": "S558", "SELECTED": true }, "S579": { "URL": "\/catalog\/579\/", "NAME": "\u041c\u044f\u0447\u0438 \u0444\u0443\u0442\u0437\u0430\u043b\u044c\u043d\u044b\u0435", "ID": "S579", "IBLOCK_SECTION_ID": "S558" }, "S576": { "URL": "\/catalog\/576\/", "NAME": "\u041c\u044f\u0447\u0438 \u0434\u043b\u044f \u043f\u043b\u044f\u0436\u043d\u043e\u0433\u043e \u0444\u0443\u0442\u0431\u043e\u043b\u0430", "ID": "S576", "IBLOCK_SECTION_ID": "S558" }, "S577": { "URL": "\/catalog\/577\/", "NAME": "\u041c\u044f\u0447\u0438 \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u044b\u0435", "ID": "S577", "IBLOCK_SECTION_ID": "S558" }, "S559": { "URL": "\/catalog\/559\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S559", "IBLOCK_SECTION_ID": "S558", "SUBMENU": { "S560": { "URL": "\/catalog\/560\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439 (\u043d\u0430\u0441\u043e\u0441\u044b, \u0438\u0433\u043b\u044b \u0438 \u0434\u0440.)", "ID": "S560", "IBLOCK_SECTION_ID": "S559" }, "S561": { "URL": "\/catalog\/561\/", "NAME": "\u0411\u0443\u0442\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u044b, \u0448\u0435\u0439\u043a\u0435\u0440\u044b", "ID": "S561", "IBLOCK_SECTION_ID": "S559" }, "S562": { "URL": "\/catalog\/562\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0438 \u0433\u0430\u0441\u0438\u0442\u0435\u043b\u0438 \u0444\u0443\u0442\u0437\u0430\u043b\u044c\u043d\u044b\u0435", "ID": "S562", "IBLOCK_SECTION_ID": "S559" }, "S563": { "URL": "\/catalog\/563\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0444\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S563", "IBLOCK_SECTION_ID": "S559" }, "S564": { "URL": "\/catalog\/564\/", "NAME": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u0430\u044f \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0430", "ID": "S564", "IBLOCK_SECTION_ID": "S559" }, "S565": { "URL": "\/catalog\/565\/", "NAME": "\u0421\u0443\u0434\u0435\u0439\u0441\u043a\u0438\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S565", "IBLOCK_SECTION_ID": "S559" }, "S566": { "URL": "\/catalog\/566\/", "NAME": "\u0422\u0435\u043b\u0435\u0436\u043a\u0438, \u0441\u0443\u043c\u043a\u0438\/\u0441\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439", "ID": "S566", "IBLOCK_SECTION_ID": "S559" }, "S567": { "URL": "\/catalog\/567\/", "NAME": "\u0422\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043e\u0447\u043d\u044b\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S567", "IBLOCK_SECTION_ID": "S559" }, "S568": { "URL": "\/catalog\/568\/", "NAME": "\u0424\u0430\u043d. \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u0438\u043a\u0430, \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u044b", "ID": "S568", "IBLOCK_SECTION_ID": "S559" } } }, "S569": { "URL": "\/catalog\/569\/", "NAME": "\u042d\u043a\u0438\u043f\u0438\u0440\u043e\u0432\u043a\u0430", "ID": "S569", "IBLOCK_SECTION_ID": "S558", "SUBMENU": { "S570": { "URL": "\/catalog\/570\/", "NAME": "\u0413\u0435\u0442\u0440\u044b", "ID": "S570", "IBLOCK_SECTION_ID": "S569" }, "S571": { "URL": "\/catalog\/571\/", "NAME": "\u041a\u0430\u043f\u0438\u0442\u0430\u043d\u0441\u043a\u0438\u0435 \u043f\u043e\u0432\u044f\u0437\u043a\u0438", "ID": "S571", "IBLOCK_SECTION_ID": "S569" }, "S572": { "URL": "\/catalog\/572\/", "NAME": "\u041c\u0430\u043d\u0438\u0448\u043a\u0438", "ID": "S572", "IBLOCK_SECTION_ID": "S569" }, "S573": { "URL": "\/catalog\/573\/", "NAME": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438 \u0432\u0440\u0430\u0442\u0430\u0440\u0441\u043a\u0438\u0435", "ID": "S573", "IBLOCK_SECTION_ID": "S569" }, "S574": { "URL": "\/catalog\/574\/", "NAME": "\u0424\u043e\u0440\u043c\u0430 \u0444\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u0430\u044f", "ID": "S574", "IBLOCK_SECTION_ID": "S569" }, "S575": { "URL": "\/catalog\/575\/", "NAME": "\u0429\u0438\u0442\u043a\u0438 \u0444\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S575", "IBLOCK_SECTION_ID": "S569" } } } } }, "S433": { "URL": "\/catalog\/433\/", "NAME": "\u0412\u041e\u041b\u0415\u0419\u0411\u041e\u041b", "ID": "S433", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S450": { "URL": "\/catalog\/450\/", "NAME": "\u041c\u044f\u0447\u0438 \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S450", "IBLOCK_SECTION_ID": "S433" }, "S451": { "URL": "\/catalog\/451\/", "NAME": "\u041c\u044f\u0447\u0438 \u0434\u043b\u044f \u043f\u043b\u044f\u0436\u043d\u043e\u0433\u043e \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u0430", "ID": "S451", "IBLOCK_SECTION_ID": "S433" }, "S452": { "URL": "\/catalog\/452\/", "NAME": "\u041c\u044f\u0447\u0438 \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u044b\u0435", "ID": "S452", "IBLOCK_SECTION_ID": "S433" }, "S434": { "URL": "\/catalog\/434\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S434", "IBLOCK_SECTION_ID": "S433", "SUBMENU": { "S435": { "URL": "\/catalog\/435\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439 (\u043d\u0430\u0441\u043e\u0441\u044b, \u0438\u0433\u043b\u044b \u0438 \u0434\u0440.)", "ID": "S435", "IBLOCK_SECTION_ID": "S434" }, "S436": { "URL": "\/catalog\/436\/", "NAME": "\u0410\u043d\u0442\u0435\u043d\u043d\u044b, \u043a\u0430\u0440\u043c\u0430\u043d\u044b, \u0442\u0440\u043e\u0441\u044b \u0434\u043b\u044f \u0441\u0435\u0442\u043e\u043a", "ID": "S436", "IBLOCK_SECTION_ID": "S434" }, "S437": { "URL": "\/catalog\/437\/", "NAME": "\u0411\u0443\u0442\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u044b, \u0448\u0435\u0439\u043a\u0435\u0440\u044b", "ID": "S437", "IBLOCK_SECTION_ID": "S434" }, "S438": { "URL": "\/catalog\/438\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S438", "IBLOCK_SECTION_ID": "S434" }, "S439": { "URL": "\/catalog\/439\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0438 \u0440\u0430\u0437\u043c\u0435\u0442\u043a\u0430 \u0434\u043b\u044f \u043f\u043b\u044f\u0436\u043d\u043e\u0433\u043e \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u0430", "ID": "S439", "IBLOCK_SECTION_ID": "S434" }, "S440": { "URL": "\/catalog\/440\/", "NAME": "\u0421\u0443\u0434\u0435\u0439\u0441\u043a\u0438\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S440", "IBLOCK_SECTION_ID": "S434" }, "S441": { "URL": "\/catalog\/441\/", "NAME": "\u0422\u0435\u043b\u0435\u0436\u043a\u0438, \u0441\u0443\u043c\u043a\u0438\/\u0441\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439", "ID": "S441", "IBLOCK_SECTION_ID": "S434" }, "S442": { "URL": "\/catalog\/442\/", "NAME": "\u0422\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043e\u0447\u043d\u044b\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S442", "IBLOCK_SECTION_ID": "S434" }, "S443": { "URL": "\/catalog\/443\/", "NAME": "\u0424\u0430\u043d. \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u0438\u043a\u0430, \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u0430\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u044f", "ID": "S443", "IBLOCK_SECTION_ID": "S434" } } }, "S444": { "URL": "\/catalog\/444\/", "NAME": "\u042d\u043a\u0438\u043f\u0438\u0440\u043e\u0432\u043a\u0430", "ID": "S444", "IBLOCK_SECTION_ID": "S433", "SUBMENU": { "S445": { "URL": "\/catalog\/445\/", "NAME": "\u0411\u0435\u0439\u0441\u0431\u043e\u043b\u043a\u0438, \u0448\u0430\u043f\u043a\u0438", "ID": "S445", "IBLOCK_SECTION_ID": "S444" }, "S446": { "URL": "\/catalog\/446\/", "NAME": "\u0413\u043e\u043b\u044c\u0444\u044b \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S446", "IBLOCK_SECTION_ID": "S444" }, "S447": { "URL": "\/catalog\/447\/", "NAME": "\u041a\u043e\u0441\u0442\u044e\u043c\u044b, \u043a\u0443\u0440\u0442\u043a\u0438", "ID": "S447", "IBLOCK_SECTION_ID": "S444" }, "S448": { "URL": "\/catalog\/448\/", "NAME": "\u041d\u0430\u043a\u043e\u043b\u0435\u043d\u043d\u0438\u043a\u0438, \u043d\u0430\u0440\u0443\u043a\u0430\u0432\u043d\u0438\u043a\u0438", "ID": "S448", "IBLOCK_SECTION_ID": "S444" }, "S449": { "URL": "\/catalog\/449\/", "NAME": "\u0424\u043e\u0440\u043c\u0430 \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u044c\u043d\u0430\u044f", "ID": "S449", "IBLOCK_SECTION_ID": "S444" } } } } }, "S409": { "URL": "\/catalog\/409\/", "NAME": "\u0411\u0410\u0421\u041a\u0415\u0422\u0411\u041e\u041b", "ID": "S409", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S410": { "URL": "\/catalog\/410\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S410", "IBLOCK_SECTION_ID": "S409", "SUBMENU": { "S411": { "URL": "\/catalog\/411\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439 (\u043d\u0430\u0441\u043e\u0441\u044b, \u0438\u0433\u043b\u044b \u0438 \u0434\u0440.)", "ID": "S411", "IBLOCK_SECTION_ID": "S410" }, "S412": { "URL": "\/catalog\/412\/", "NAME": "\u0411\u0443\u0442\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u044b, \u0448\u0435\u0439\u043a\u0435\u0440\u044b", "ID": "S412", "IBLOCK_SECTION_ID": "S410" }, "S413": { "URL": "\/catalog\/413\/", "NAME": "\u041a\u043e\u043b\u044c\u0446\u0430 \u0431\u0430\u0441\u043a\u0435\u0442\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S413", "IBLOCK_SECTION_ID": "S410" }, "S414": { "URL": "\/catalog\/414\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0431\u0430\u0441\u043a\u0435\u0442\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S414", "IBLOCK_SECTION_ID": "S410" }, "S415": { "URL": "\/catalog\/415\/", "NAME": "\u0422\u0435\u043b\u0435\u0436\u043a\u0438, \u0441\u0443\u043c\u043a\u0438\/\u0441\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439", "ID": "S415", "IBLOCK_SECTION_ID": "S410" }, "S416": { "URL": "\/catalog\/416\/", "NAME": "\u0422\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043e\u0447\u043d\u044b\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S416", "IBLOCK_SECTION_ID": "S410" }, "S417": { "URL": "\/catalog\/417\/", "NAME": "\u0424\u0430\u043d. \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u0438\u043a\u0430, \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u0430\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u044f", "ID": "S417", "IBLOCK_SECTION_ID": "S410" } } }, "S418": { "URL": "\/catalog\/418\/", "NAME": "\u041c\u044f\u0447\u0438 \u0431\u0430\u0441\u043a\u0435\u0442\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S418", "IBLOCK_SECTION_ID": "S409" }, "S419": { "URL": "\/catalog\/419\/", "NAME": "\u041c\u044f\u0447\u0438 \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u044b\u0435", "ID": "S419", "IBLOCK_SECTION_ID": "S409" } } }, "S453": { "URL": "\/catalog\/453\/", "NAME": "\u0413\u0410\u041d\u0414\u0411\u041e\u041b", "ID": "S453", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S454": { "URL": "\/catalog\/454\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S454", "IBLOCK_SECTION_ID": "S453", "SUBMENU": { "S455": { "URL": "\/catalog\/455\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439 (\u043d\u0430\u0441\u043e\u0441\u044b, \u0438\u0433\u043b\u044b \u0438 \u0434\u0440.)", "ID": "S455", "IBLOCK_SECTION_ID": "S454" }, "S456": { "URL": "\/catalog\/456\/", "NAME": "\u0411\u0443\u0442\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u044b, \u0448\u0435\u0439\u043a\u0435\u0440\u044b", "ID": "S456", "IBLOCK_SECTION_ID": "S454" }, "S457": { "URL": "\/catalog\/457\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0438 \u0433\u0430\u0441\u0438\u0442\u0435\u043b\u0438 \u0433\u0430\u043d\u0434\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S457", "IBLOCK_SECTION_ID": "S454" }, "S458": { "URL": "\/catalog\/458\/", "NAME": "\u0422\u0435\u043b\u0435\u0436\u043a\u0438, \u0441\u0443\u043c\u043a\u0438\/\u0441\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439", "ID": "S458", "IBLOCK_SECTION_ID": "S454" }, "S459": { "URL": "\/catalog\/459\/", "NAME": "\u0422\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043e\u0447\u043d\u044b\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S459", "IBLOCK_SECTION_ID": "S454" }, "S460": { "URL": "\/catalog\/460\/", "NAME": "\u0424\u0430\u043d. \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u0438\u043a\u0430, \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u0430\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u044f", "ID": "S460", "IBLOCK_SECTION_ID": "S454" } } }, "S461": { "URL": "\/catalog\/461\/", "NAME": "\u041c\u044f\u0447\u0438 \u0433\u0430\u043d\u0434\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S461", "IBLOCK_SECTION_ID": "S453" } } }, "S508": { "URL": "\/catalog\/508\/", "NAME": "\u0420\u0415\u0413\u0411\u0418", "ID": "S508", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S509": { "URL": "\/catalog\/509\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S509", "IBLOCK_SECTION_ID": "S508", "SUBMENU": { "S510": { "URL": "\/catalog\/510\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439 (\u043d\u0430\u0441\u043e\u0441\u044b, \u0438\u0433\u043b\u044b \u0438 \u0434\u0440.)", "ID": "S510", "IBLOCK_SECTION_ID": "S509" }, "S511": { "URL": "\/catalog\/511\/", "NAME": "\u0411\u0443\u0442\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u044b, \u0448\u0435\u0439\u043a\u0435\u0440\u044b", "ID": "S511", "IBLOCK_SECTION_ID": "S509" }, "S512": { "URL": "\/catalog\/512\/", "NAME": "\u0422\u0435\u043b\u0435\u0436\u043a\u0438, \u0441\u0443\u043c\u043a\u0438\/\u0441\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439", "ID": "S512", "IBLOCK_SECTION_ID": "S509" }, "S513": { "URL": "\/catalog\/513\/", "NAME": "\u0422\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043e\u0447\u043d\u044b\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S513", "IBLOCK_SECTION_ID": "S509" }, "S514": { "URL": "\/catalog\/514\/", "NAME": "\u0424\u0430\u043d. \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u0438\u043a\u0430, \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u0430\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u044f", "ID": "S514", "IBLOCK_SECTION_ID": "S509" } } }, "S515": { "URL": "\/catalog\/515\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u0430 \u0438 \u044d\u043a\u0438\u043f\u0438\u0440\u043e\u0432\u043a\u0430", "ID": "S515", "IBLOCK_SECTION_ID": "S508" }, "S516": { "URL": "\/catalog\/516\/", "NAME": "\u041c\u044f\u0447\u0438 \u0434\u043b\u044f \u0440\u0435\u0433\u0431\u0438", "ID": "S516", "IBLOCK_SECTION_ID": "S508" }, "S517": { "URL": "\/catalog\/517\/", "NAME": "\u0428\u043b\u0435\u043c\u044b", "ID": "S517", "IBLOCK_SECTION_ID": "S508" } } }, "S430": { "URL": "\/catalog\/430\/", "NAME": "\u0412\u041e\u0414\u041d\u041e\u0415 \u041f\u041e\u041b\u041e", "ID": "S430", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S431": { "URL": "\/catalog\/431\/", "NAME": "\u041c\u044f\u0447\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u043d\u043e\u0433\u043e \u043f\u043e\u043b\u043e", "ID": "S431", "IBLOCK_SECTION_ID": "S430" }, "S432": { "URL": "\/catalog\/432\/", "NAME": "\u041c\u044f\u0447\u0438 \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u044b\u0435", "ID": "S432", "IBLOCK_SECTION_ID": "S430" } } }, "S396": { "URL": "\/catalog\/396\/", "NAME": "\u0410\u041c\u0415\u0420\u0418\u041a\u0410\u041d\u0421\u041a\u0418\u0419 \u0424\u0423\u0422\u0411\u041e\u041b", "ID": "S396", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S397": { "URL": "\/catalog\/397\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S397", "IBLOCK_SECTION_ID": "S396", "SUBMENU": { "S398": { "URL": "\/catalog\/398\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439 (\u043d\u0430\u0441\u043e\u0441\u044b, \u0438\u0433\u043b\u044b \u0438 \u0434\u0440.)", "ID": "S398", "IBLOCK_SECTION_ID": "S397" }, "S399": { "URL": "\/catalog\/399\/", "NAME": "\u0411\u0443\u0442\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u044b, \u0448\u0435\u0439\u043a\u0435\u0440\u044b", "ID": "S399", "IBLOCK_SECTION_ID": "S397" }, "S400": { "URL": "\/catalog\/400\/", "NAME": "\u0422\u0435\u043b\u0435\u0436\u043a\u0438, \u0441\u0443\u043c\u043a\u0438\/\u0441\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439", "ID": "S400", "IBLOCK_SECTION_ID": "S397" }, "S401": { "URL": "\/catalog\/401\/", "NAME": "\u0422\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043e\u0447\u043d\u044b\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S401", "IBLOCK_SECTION_ID": "S397" }, "S402": { "URL": "\/catalog\/402\/", "NAME": "\u0424\u0430\u043d. \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u0438\u043a\u0430, \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u0430\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u044f", "ID": "S402", "IBLOCK_SECTION_ID": "S397" } } }, "S403": { "URL": "\/catalog\/403\/", "NAME": "\u041c\u044f\u0447\u0438 \u0434\u043b\u044f \u0430\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0444\u0443\u0442\u0431\u043e\u043b\u0430", "ID": "S403", "IBLOCK_SECTION_ID": "S396" }, "S404": { "URL": "\/catalog\/404\/", "NAME": "\u0421\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u044b\u0435 \u043c\u044f\u0447\u0438", "ID": "S404", "IBLOCK_SECTION_ID": "S396" } } }, "S462": { "URL": "\/catalog\/462\/", "NAME": "\u0414\u0420\u0423\u0413\u0418\u0415 \u0412\u0418\u0414\u042b \u0421\u041f\u041e\u0420\u0422\u0410", "ID": "S462", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S463": { "URL": "\/catalog\/463\/", "NAME": "\u0411\u0435\u0439\u0441\u0431\u043e\u043b", "ID": "S463", "IBLOCK_SECTION_ID": "S462" }, "S464": { "URL": "\/catalog\/464\/", "NAME": "\u0413\u043e\u043b\u044c\u0444", "ID": "S464", "IBLOCK_SECTION_ID": "S462" }, "S465": { "URL": "\/catalog\/465\/", "NAME": "\u0413\u0440\u0430\u043d\u0430\u0442\u044b \u0438 \u043c\u044f\u0447\u0438 \u0434\u043b\u044f \u043c\u0435\u0442\u0430\u043d\u0438\u044f", "ID": "S465", "IBLOCK_SECTION_ID": "S462" }, "S466": { "URL": "\/catalog\/466\/", "NAME": "\u0414\u0435\u0442\u0441\u043a\u0438\u0435 \u043c\u044f\u0447\u0438", "ID": "S466", "IBLOCK_SECTION_ID": "S462" }, "S467": { "URL": "\/catalog\/467\/", "NAME": "\u041a\u0430\u043d\u0430\u0442\u044b \u0434\u043b\u044f \u043b\u0430\u0437\u0430\u043d\u0438\u044f \u0438 \u043f\u0435\u0440\u0435\u0442\u044f\u0433\u0438\u0432\u0430\u043d\u0438\u044f", "ID": "S467", "IBLOCK_SECTION_ID": "S462" }, "S468": { "URL": "\/catalog\/468\/", "NAME": "\u0424\u043b\u043e\u0440\u0431\u043e\u043b", "ID": "S468", "IBLOCK_SECTION_ID": "S462" }, "S469": { "URL": "\/catalog\/469\/", "NAME": "\u0425\u043e\u043a\u043a\u0435\u0439 \u0441 \u043c\u044f\u0447\u043e\u043c \u043d\u0430 \u043b\u044c\u0434\u0443", "ID": "S469", "IBLOCK_SECTION_ID": "S462" } } }, "S580": { "URL": "\/catalog\/580\/", "NAME": "\u0425\u041e\u041a\u041a\u0415\u0419", "ID": "S580", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S581": { "URL": "\/catalog\/581\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S581", "IBLOCK_SECTION_ID": "S580", "SUBMENU": { "S582": { "URL": "\/catalog\/582\/", "NAME": "\u0411\u0430\u0443\u043b\u044b", "ID": "S582", "IBLOCK_SECTION_ID": "S581" }, "S583": { "URL": "\/catalog\/583\/", "NAME": "\u0411\u0443\u0442\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u044b, \u0448\u0435\u0439\u043a\u0435\u0440\u044b", "ID": "S583", "IBLOCK_SECTION_ID": "S581" }, "S584": { "URL": "\/catalog\/584\/", "NAME": "\u041b\u0435\u043d\u0442\u044b, \u0432\u043e\u0441\u043a, \u0441\u043a\u043e\u0442\u0447 \u0434\u043b\u044f \u0449\u0438\u0442\u043a\u043e\u0432", "ID": "S584", "IBLOCK_SECTION_ID": "S581" }, "S585": { "URL": "\/catalog\/585\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0438 \u0433\u0430\u0441\u0438\u0442\u0435\u043b\u0438 \u0445\u043e\u043a\u043a\u0435\u0439\u043d\u044b\u0435", "ID": "S585", "IBLOCK_SECTION_ID": "S581" }, "S586": { "URL": "\/catalog\/586\/", "NAME": "\u0424\u0430\u043d. \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u0438\u043a\u0430, \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u043d\u0430\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u044f", "ID": "S586", "IBLOCK_SECTION_ID": "S581" }, "S587": { "URL": "\/catalog\/587\/", "NAME": "\u0428\u043d\u0443\u0440\u043a\u0438", "ID": "S587", "IBLOCK_SECTION_ID": "S581" } } }, "S588": { "URL": "\/catalog\/588\/", "NAME": "\u042d\u043a\u0438\u043f\u0438\u0440\u043e\u0432\u043a\u0430", "ID": "S588", "IBLOCK_SECTION_ID": "S580", "SUBMENU": { "S589": { "URL": "\/catalog\/589\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u0430 \u0433\u0440\u0443\u0434\u0438\/\u043f\u043b\u0435\u0447", "ID": "S589", "IBLOCK_SECTION_ID": "S588" }, "S590": { "URL": "\/catalog\/590\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u0430 \u043a\u043e\u043b\u0435\u043d\u0435\u0439\/\u0433\u043e\u043b\u0435\u043d\u0435\u0439", "ID": "S590", "IBLOCK_SECTION_ID": "S588" }, "S591": { "URL": "\/catalog\/591\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u0430 \u043b\u043e\u043a\u0442\u0435\u0439", "ID": "S591", "IBLOCK_SECTION_ID": "S588" }, "S592": { "URL": "\/catalog\/592\/", "NAME": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438", "ID": "S592", "IBLOCK_SECTION_ID": "S588" }, "S593": { "URL": "\/catalog\/593\/", "NAME": "\u0420\u0435\u0439\u0442\u0443\u0437\u044b", "ID": "S593", "IBLOCK_SECTION_ID": "S588" }, "S594": { "URL": "\/catalog\/594\/", "NAME": "\u0428\u043b\u0435\u043c\u044b", "ID": "S594", "IBLOCK_SECTION_ID": "S588" } } }, "S595": { "URL": "\/catalog\/595\/", "NAME": "\u041a\u043b\u044e\u0448\u043a\u0438, \u043d\u0430\u0431\u043e\u0440\u044b", "ID": "S595", "IBLOCK_SECTION_ID": "S580" }, "S596": { "URL": "\/catalog\/596\/", "NAME": "\u0428\u0430\u0439\u0431\u044b", "ID": "S596", "IBLOCK_SECTION_ID": "S580" } } }, "S420": { "URL": "\/catalog\/420\/", "NAME": "\u0411\u041e\u041b\u042c\u0428\u041e\u0419 \u0422\u0415\u041d\u041d\u0418\u0421", "ID": "S420", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S421": { "URL": "\/catalog\/421\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S421", "IBLOCK_SECTION_ID": "S420", "SUBMENU": { "S422": { "URL": "\/catalog\/422\/", "NAME": "\u0411\u0443\u0442\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u044b, \u0448\u0435\u0439\u043a\u0435\u0440\u044b", "ID": "S422", "IBLOCK_SECTION_ID": "S421" }, "S423": { "URL": "\/catalog\/423\/", "NAME": "\u041d\u0430\u043f\u0443\u043b\u044c\u0441\u043d\u0438\u043a\u0438, \u043f\u043e\u0432\u044f\u0437\u043a\u0438 \u043d\u0430 \u0433\u043e\u043b\u043e\u0432\u0443", "ID": "S423", "IBLOCK_SECTION_ID": "S421" }, "S424": { "URL": "\/catalog\/424\/", "NAME": "\u041e\u0432\u0435\u0440\u0433\u0440\u0438\u043f\u044b, \u0432\u0438\u0431\u0440\u043e\u0433\u0430\u0441\u0438\u0442\u0435\u043b\u0438", "ID": "S424", "IBLOCK_SECTION_ID": "S421" }, "S425": { "URL": "\/catalog\/425\/", "NAME": "\u0420\u044e\u043a\u0437\u0430\u043a\u0438 \u0438 \u0441\u0443\u043c\u043a\u0438", "ID": "S425", "IBLOCK_SECTION_ID": "S421" }, "S426": { "URL": "\/catalog\/426\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u0431\u043e\u043b\u044c\u0448\u043e\u0433\u043e \u0442\u0435\u043d\u043d\u0438\u0441\u0430, \u0446\u0435\u043d\u0442\u0440. \u043b\u0435\u043d\u0442\u044b", "ID": "S426", "IBLOCK_SECTION_ID": "S421" }, "S427": { "URL": "\/catalog\/427\/", "NAME": "\u0422\u0435\u043b\u0435\u0436\u043a\u0438, \u043a\u043e\u0440\u0437\u0438\u043d\u044b, \u0441\u0443\u043c\u043a\u0438 \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439", "ID": "S427", "IBLOCK_SECTION_ID": "S421" } } }, "S428": { "URL": "\/catalog\/428\/", "NAME": "\u041c\u044f\u0447\u0438 \u0434\u043b\u044f \u0431\u043e\u043b\u044c\u0448\u043e\u0433\u043e \u0442\u0435\u043d\u043d\u0438\u0441\u0430", "ID": "S428", "IBLOCK_SECTION_ID": "S420" }, "S429": { "URL": "\/catalog\/429\/", "NAME": "\u0420\u0430\u043a\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u0431\u043e\u043b\u044c\u0448\u043e\u0433\u043e \u0442\u0435\u043d\u043d\u0438\u0441\u0430", "ID": "S429", "IBLOCK_SECTION_ID": "S420" } } }, "S493": { "URL": "\/catalog\/493\/", "NAME": "\u041d\u0410\u0421\u0422\u041e\u041b\u042c\u041d\u042b\u0419 \u0422\u0415\u041d\u041d\u0418\u0421", "ID": "S493", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S494": { "URL": "\/catalog\/494\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S494", "IBLOCK_SECTION_ID": "S493", "SUBMENU": { "S495": { "URL": "\/catalog\/495\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0435\u043d\u043d\u0438\u0441\u0430", "ID": "S495", "IBLOCK_SECTION_ID": "S494" }, "S496": { "URL": "\/catalog\/496\/", "NAME": "\u0421\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0434\u043b\u044f \u0447\u0438\u0441\u0442\u043a\u0438 \u043d\u0430\u043a\u043b\u0430\u0434\u043e\u043a, \u0442\u0443\u0431\u044b", "ID": "S496", "IBLOCK_SECTION_ID": "S494" }, "S497": { "URL": "\/catalog\/497\/", "NAME": "\u0421\u0443\u0434\u0435\u0439\u0441\u043a\u0438\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S497", "IBLOCK_SECTION_ID": "S494" }, "S498": { "URL": "\/catalog\/498\/", "NAME": "\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u0440\u0430\u043a\u0435\u0442\u043e\u043a", "ID": "S498", "IBLOCK_SECTION_ID": "S494" } } }, "S499": { "URL": "\/catalog\/499\/", "NAME": "\u041c\u044f\u0447\u0438 \u0434\u043b\u044f \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0435\u043d\u043d\u0438\u0441\u0430", "ID": "S499", "IBLOCK_SECTION_ID": "S493" }, "S500": { "URL": "\/catalog\/500\/", "NAME": "\u0420\u0430\u043a\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0435\u043d\u043d\u0438\u0441\u0430, \u043d\u0430\u0431\u043e\u0440\u044b", "ID": "S500", "IBLOCK_SECTION_ID": "S493" } } }, "S405": { "URL": "\/catalog\/405\/", "NAME": "\u0411\u0410\u0414\u041c\u0418\u041d\u0422\u041e\u041d", "ID": "S405", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S406": { "URL": "\/catalog\/406\/", "NAME": "\u0412\u043e\u043b\u0430\u043d\u044b", "ID": "S406", "IBLOCK_SECTION_ID": "S405" }, "S407": { "URL": "\/catalog\/407\/", "NAME": "\u0420\u0430\u043a\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u0431\u0430\u0434\u043c\u0438\u043d\u0442\u043e\u043d\u0430, \u043d\u0430\u0431\u043e\u0440\u044b", "ID": "S407", "IBLOCK_SECTION_ID": "S405" }, "S408": { "URL": "\/catalog\/408\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u0431\u0430\u0434\u043c\u0438\u043d\u0442\u043e\u043d\u0430", "ID": "S408", "IBLOCK_SECTION_ID": "S405" } } }, "S535": { "URL": "\/catalog\/535\/", "NAME": "\u0424\u0418\u0422\u041d\u0415\u0421", "ID": "S535", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S537": { "URL": "\/catalog\/537\/", "NAME": "\u041e\u0431\u0440\u0443\u0447\u0438 \u0433\u0438\u043c\u043d\u0430\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435, \u043e\u0431\u043c\u043e\u0442\u043a\u0438", "ID": "S537", "IBLOCK_SECTION_ID": "S535" }, "S538": { "URL": "\/catalog\/538\/", "NAME": "\u0421\u043a\u0430\u043a\u0430\u043b\u043a\u0438", "ID": "S538", "IBLOCK_SECTION_ID": "S535" }, "S539": { "URL": "\/catalog\/539\/", "NAME": "\u0421\u0442\u0435\u043f-\u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u044b", "ID": "S539", "IBLOCK_SECTION_ID": "S535" }, "S540": { "URL": "\/catalog\/540\/", "NAME": "\u042d\u0441\u043f\u0430\u043d\u0434\u0435\u0440\u044b", "ID": "S540", "IBLOCK_SECTION_ID": "S535" }, "S541": { "URL": "\/catalog\/541\/", "NAME": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438 \u0438 \u043f\u043e\u044f\u0441\u0430 \u0442\u044f\u0436\u0435\u043b\u043e\u0430\u0442\u043b\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435", "ID": "S541", "IBLOCK_SECTION_ID": "S535", "SUBMENU": { "S543": { "URL": "\/catalog\/543\/", "NAME": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438 \u0434\u043b\u044f \u0444\u0438\u0442\u043d\u0435\u0441\u0430", "ID": "S543", "IBLOCK_SECTION_ID": "S541" }, "S544": { "URL": "\/catalog\/544\/", "NAME": "\u041f\u043e\u044f\u0441\u0430 \u0442\u044f\u0436\u0435\u043b\u043e\u0430\u0442\u043b\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435", "ID": "S544", "IBLOCK_SECTION_ID": "S541" } } }, "S542": { "URL": "\/catalog\/542\/", "NAME": "\u0413\u0430\u043d\u0442\u0435\u043b\u0438, \u0433\u0440\u0438\u0444\u044b, \u0434\u0438\u0441\u043a\u0438", "ID": "S542", "IBLOCK_SECTION_ID": "S535" }, "S545": { "URL": "\/catalog\/545\/", "NAME": "\u0423\u0442\u044f\u0436\u0435\u043b\u0438\u0442\u0435\u043b\u0438", "ID": "S545", "IBLOCK_SECTION_ID": "S535" }, "S546": { "URL": "\/catalog\/546\/", "NAME": "\u0421\u0443\u043f\u043f\u043e\u0440\u0442\u0430 \u0438 \u043d\u0430\u043a\u043e\u043b\u0435\u043d\u043d\u0438\u043a\u0438", "ID": "S546", "IBLOCK_SECTION_ID": "S535", "SUBMENU": { "S547": { "URL": "\/catalog\/547\/", "NAME": "\u041d\u0430\u043a\u043e\u043b\u0435\u043d\u043d\u0438\u043a\u0438", "ID": "S547", "IBLOCK_SECTION_ID": "S546" }, "S548": { "URL": "\/catalog\/548\/", "NAME": "\u0421\u0443\u043f\u043f\u043e\u0440\u0442\u0430", "ID": "S548", "IBLOCK_SECTION_ID": "S546" } } }, "S623": { "URL": "\/catalog\/623\/", "NAME": "\u0411\u043e\u0434\u0438\u0431\u0430\u0440\u044b, \u0442\u0443\u0440\u043d\u0438\u043a\u0438", "ID": "S623", "IBLOCK_SECTION_ID": "S535" }, "S549": { "URL": "\/catalog\/549\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0444\u0438\u0442\u043d\u0435\u0441\u0430", "ID": "S549", "IBLOCK_SECTION_ID": "S535", "SUBMENU": { "S550": { "URL": "\/catalog\/550\/", "NAME": "\u0411\u0443\u0442\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u044b, \u0448\u0435\u0439\u043a\u0435\u0440\u044b", "ID": "S550", "IBLOCK_SECTION_ID": "S549" }, "S551": { "URL": "\/catalog\/551\/", "NAME": "\u041d\u0430\u043f\u0443\u043b\u044c\u0441\u043d\u0438\u043a\u0438, \u043f\u043e\u0432\u044f\u0437\u043a\u0438 \u043d\u0430 \u0433\u043e\u043b\u043e\u0432\u0443", "ID": "S551", "IBLOCK_SECTION_ID": "S549" }, "S552": { "URL": "\/catalog\/552\/", "NAME": "\u0421\u0443\u043c\u043a\u0438, \u0447\u0435\u0445\u043b\u044b, \u0440\u044e\u043a\u0437\u0430\u043a\u0438", "ID": "S552", "IBLOCK_SECTION_ID": "S549" } } }, "S624": { "URL": "\/catalog\/624\/", "NAME": "\u0414\u0438\u0441\u043a\u0438 \u0437\u0434\u043e\u0440\u043e\u0432\u044c\u044f, \u0431\u0430\u043b\u0430\u043d\u0441-\u0431\u043e\u0430\u0440\u0434\u044b", "ID": "S624", "IBLOCK_SECTION_ID": "S535" }, "S553": { "URL": "\/catalog\/553\/", "NAME": "\u041e\u0434\u0435\u0436\u0434\u0430 \u0434\u043b\u044f \u043f\u043e\u0445\u0443\u0434\u0435\u043d\u0438\u044f, \u043c\u0430\u0441\u0441\u0430\u0436\u0435\u0440\u044b", "ID": "S553", "IBLOCK_SECTION_ID": "S535" }, "S554": { "URL": "\/catalog\/554\/", "NAME": "\u0419\u043e\u0433\u0430 \u0438 \u043f\u0438\u043b\u0430\u0442\u0435\u0441", "ID": "S554", "IBLOCK_SECTION_ID": "S535" }, "S625": { "URL": "\/catalog\/625\/", "NAME": "\u0420\u043e\u043b\u0438\u043a\u0438, \u0443\u043f\u043e\u0440\u044b \u0434\u043b\u044f \u043e\u0442\u0436\u0438\u043c\u0430\u043d\u0438\u0439", "ID": "S625", "IBLOCK_SECTION_ID": "S535" }, "S555": { "URL": "\/catalog\/555\/", "NAME": "\u041c\u0435\u0434\u0431\u043e\u043b\u044b", "ID": "S555", "IBLOCK_SECTION_ID": "S535" }, "S556": { "URL": "\/catalog\/556\/", "NAME": "\u0421\u043a\u0430\u043d\u0434\u0438\u043d\u0430\u0432\u0441\u043a\u0430\u044f \u0445\u043e\u0434\u044c\u0431\u0430", "ID": "S556", "IBLOCK_SECTION_ID": "S535" }, "S557": { "URL": "\/catalog\/557\/", "NAME": "\u0424\u0438\u0442\u0431\u043e\u043b\u044b, \u043f\u0440\u044b\u0433\u0443\u043d\u044b, \u043c\u044f\u0447\u0438 \u043c\u0430\u0441\u0441\u0430\u0436\u043d\u044b\u0435", "ID": "S557", "IBLOCK_SECTION_ID": "S535" } } }, "S501": { "URL": "\/catalog\/501\/", "NAME": "\u041f\u041b\u0410\u0412\u0410\u041d\u0418\u0415", "ID": "S501", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S502": { "URL": "\/catalog\/502\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S502", "IBLOCK_SECTION_ID": "S501" }, "S503": { "URL": "\/catalog\/503\/", "NAME": "\u041a\u0443\u043f\u0430\u043b\u044c\u043d\u0438\u043a\u0438", "ID": "S503", "IBLOCK_SECTION_ID": "S501" }, "S504": { "URL": "\/catalog\/504\/", "NAME": "\u041e\u0447\u043a\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u0432\u0430\u043d\u0438\u044f", "ID": "S504", "IBLOCK_SECTION_ID": "S501" }, "S505": { "URL": "\/catalog\/505\/", "NAME": "\u041f\u043b\u0430\u0432\u043a\u0438", "ID": "S505", "IBLOCK_SECTION_ID": "S501" }, "S506": { "URL": "\/catalog\/506\/", "NAME": "\u0421\u043b\u0430\u043d\u0446\u044b", "ID": "S506", "IBLOCK_SECTION_ID": "S501" }, "S507": { "URL": "\/catalog\/507\/", "NAME": "\u0428\u0430\u043f\u043e\u0447\u043a\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u0432\u0430\u043d\u0438\u044f", "ID": "S507", "IBLOCK_SECTION_ID": "S501" } } }, "S470": { "URL": "\/catalog\/470\/", "NAME": "\u0415\u0414\u0418\u041d\u041e\u0411\u041e\u0420\u0421\u0422\u0412\u0410", "ID": "S470", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S471": { "URL": "\/catalog\/471\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u043d\u0430\u044f \u044d\u043a\u0438\u043f\u0438\u0440\u043e\u0432\u043a\u0430", "ID": "S471", "IBLOCK_SECTION_ID": "S470", "SUBMENU": { "S472": { "URL": "\/catalog\/472\/", "NAME": "\u0411\u0438\u043d\u0442\u044b", "ID": "S472", "IBLOCK_SECTION_ID": "S471" }, "S473": { "URL": "\/catalog\/473\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u0430 \u0433\u043e\u043b\u0435\u043d\u0438", "ID": "S473", "IBLOCK_SECTION_ID": "S471" }, "S474": { "URL": "\/catalog\/474\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u0430 \u0433\u0440\u0443\u0434\u0438", "ID": "S474", "IBLOCK_SECTION_ID": "S471" }, "S475": { "URL": "\/catalog\/475\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u0430 \u043f\u0430\u0445\u0430", "ID": "S475", "IBLOCK_SECTION_ID": "S471" }, "S476": { "URL": "\/catalog\/476\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u0430 \u0441\u0442\u043e\u043f\u044b (\u0444\u0443\u0442\u044b)", "ID": "S476", "IBLOCK_SECTION_ID": "S471" }, "S477": { "URL": "\/catalog\/477\/", "NAME": "\u041a\u0430\u043f\u044b", "ID": "S477", "IBLOCK_SECTION_ID": "S471" }, "S478": { "URL": "\/catalog\/478\/", "NAME": "\u0428\u043b\u0435\u043c\u044b", "ID": "S478", "IBLOCK_SECTION_ID": "S471" } } }, "S479": { "URL": "\/catalog\/479\/", "NAME": "\u0411\u043e\u0440\u0446\u043e\u0432\u043a\u0438", "ID": "S479", "IBLOCK_SECTION_ID": "S470" }, "S480": { "URL": "\/catalog\/480\/", "NAME": "\u041a\u0438\u043c\u043e\u043d\u043e, \u043e\u0434\u0435\u0436\u0434\u0430, \u043f\u043e\u044f\u0441\u0430, \u0431\u043e\u0440\u0446\u043e\u0432\u043a\u0438", "ID": "S480", "IBLOCK_SECTION_ID": "S470" }, "S481": { "URL": "\/catalog\/481\/", "NAME": "\u041c\u0435\u0448\u043a\u0438, \u0433\u0440\u0443\u0448\u0438", "ID": "S481", "IBLOCK_SECTION_ID": "S470" }, "S482": { "URL": "\/catalog\/482\/", "NAME": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438, \u043b\u0430\u043f\u044b, \u043c\u0430\u043a\u0438\u0432\u0430\u0440\u044b", "ID": "S482", "IBLOCK_SECTION_ID": "S470" }, "S622": { "URL": "\/catalog\/622\/", "NAME": "\u041f\u043e\u044f\u0441\u0430 \u0442\u044f\u0436\u0435\u043b\u043e\u0430\u0442\u043b\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435", "ID": "S622", "IBLOCK_SECTION_ID": "S470" } } }, "S518": { "URL": "\/catalog\/518\/", "NAME": "\u0421\u0415\u0422\u041a\u0418 \u0421\u041f\u041e\u0420\u0422\u0418\u0412\u041d\u042b\u0415", "ID": "S518", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S519": { "URL": "\/catalog\/519\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S519", "IBLOCK_SECTION_ID": "S518", "SUBMENU": { "S520": { "URL": "\/catalog\/520\/", "NAME": "\u0410\u043d\u0442\u0435\u043d\u043d\u044b, \u043a\u0430\u0440\u043c\u0430\u043d\u044b, \u0442\u0440\u043e\u0441\u044b", "ID": "S520", "IBLOCK_SECTION_ID": "S519" }, "S521": { "URL": "\/catalog\/521\/", "NAME": "\u0420\u0430\u0437\u043c\u0435\u0442\u043a\u0430 \u0434\u043b\u044f \u043f\u043b\u044f\u0436\u043d\u043e\u0433\u043e \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u0430", "ID": "S521", "IBLOCK_SECTION_ID": "S519" }, "S522": { "URL": "\/catalog\/522\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u0430", "ID": "S522", "IBLOCK_SECTION_ID": "S519" }, "S523": { "URL": "\/catalog\/523\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043f\u043b\u044f\u0436\u043d\u043e\u0433\u043e \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u0430", "ID": "S523", "IBLOCK_SECTION_ID": "S519" } } }, "S524": { "URL": "\/catalog\/524\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0431\u0430\u0441\u043a\u0435\u0442\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S524", "IBLOCK_SECTION_ID": "S518" }, "S525": { "URL": "\/catalog\/525\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u0431\u0430\u0434\u043c\u0438\u043d\u0442\u043e\u043d\u0430", "ID": "S525", "IBLOCK_SECTION_ID": "S518" }, "S526": { "URL": "\/catalog\/526\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u0431\u043e\u043b\u044c\u0448\u043e\u0433\u043e \u0442\u0435\u043d\u043d\u0438\u0441\u0430", "ID": "S526", "IBLOCK_SECTION_ID": "S518" }, "S527": { "URL": "\/catalog\/527\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0435\u043d\u043d\u0438\u0441\u0430", "ID": "S527", "IBLOCK_SECTION_ID": "S518" }, "S528": { "URL": "\/catalog\/528\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0438 \u0433\u0430\u0441\u0438\u0442\u0435\u043b\u0438 \u0445\u043e\u043a\u043a\u0435\u0439\u043d\u044b\u0435", "ID": "S528", "IBLOCK_SECTION_ID": "S518" }, "S529": { "URL": "\/catalog\/529\/", "NAME": "\u0421\u0435\u0442\u043a\u0438 \u0444\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S529", "IBLOCK_SECTION_ID": "S518" }, "S530": { "URL": "\/catalog\/530\/", "NAME": "\u0421\u0435\u0442\u043a\u0438, \u0433\u0430\u0441\u0438\u0442\u0435\u043b\u0438, \u0440\u0430\u0437\u043c\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u0444\u0443\u0442\u0437\u0430\u043b\u0430\/\u0433\u0430\u043d\u0434\u0431\u043e\u043b\u0430", "ID": "S530", "IBLOCK_SECTION_ID": "S518" } } }, "S483": { "URL": "\/catalog\/483\/", "NAME": "\u0418\u041d\u0412\u0415\u041d\u0422\u0410\u0420\u042c \u0418 \u0410\u041a\u0421\u0415\u0421\u0421\u0423\u0410\u0420\u042b", "ID": "S483", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S484": { "URL": "\/catalog\/484\/", "NAME": "\u0411\u0443\u0442\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u0432\u043e\u0434\u044b, \u0448\u0435\u0439\u043a\u0435\u0440\u044b", "ID": "S484", "IBLOCK_SECTION_ID": "S483" }, "S485": { "URL": "\/catalog\/485\/", "NAME": "\u041c\u0430\u043d\u043e\u043c\u0435\u0442\u0440\u044b, \u0438\u0433\u043b\u044b, \u043a\u0430\u043c\u0435\u0440\u044b \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439", "ID": "S485", "IBLOCK_SECTION_ID": "S483" }, "S486": { "URL": "\/catalog\/486\/", "NAME": "\u041d\u0430\u0441\u043e\u0441\u044b \u0438 \u043a\u043e\u043c\u043f\u0440\u0435\u0441\u0441\u043e\u0440\u044b", "ID": "S486", "IBLOCK_SECTION_ID": "S483" }, "S487": { "URL": "\/catalog\/487\/", "NAME": "\u0421\u0435\u043a\u0443\u043d\u0434\u043e\u043c\u0435\u0440\u044b", "ID": "S487", "IBLOCK_SECTION_ID": "S483" }, "S488": { "URL": "\/catalog\/488\/", "NAME": "\u0421\u0443\u0434\u0435\u0439\u0441\u043a\u0438\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S488", "IBLOCK_SECTION_ID": "S483" }, "S489": { "URL": "\/catalog\/489\/", "NAME": "\u0421\u0443\u043c\u043a\u0438, \u0431\u0430\u0443\u043b\u044b, \u0440\u044e\u043a\u0437\u0430\u043a\u0438, \u0441\u0435\u0442\u043a\u0438 \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439", "ID": "S489", "IBLOCK_SECTION_ID": "S483" }, "S490": { "URL": "\/catalog\/490\/", "NAME": "\u0422\u0435\u043b\u0435\u0436\u043a\u0438 \u0438 \u043a\u043e\u0440\u0437\u0438\u043d\u044b \u0434\u043b\u044f \u043c\u044f\u0447\u0435\u0439", "ID": "S490", "IBLOCK_SECTION_ID": "S483" }, "S491": { "URL": "\/catalog\/491\/", "NAME": "\u0422\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043e\u0447\u043d\u044b\u0439 \u0438\u043d\u0432\u0435\u043d\u0442\u0430\u0440\u044c", "ID": "S491", "IBLOCK_SECTION_ID": "S483" }, "S492": { "URL": "\/catalog\/492\/", "NAME": "\u0424\u0430\u043d. \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u0438\u043a\u0430 \u0438 \u0441\u0443\u0432\u0435\u043d\u0438\u0440\u044b", "ID": "S492", "IBLOCK_SECTION_ID": "S483" } } }, "S597": { "URL": "\/catalog\/597\/", "NAME": "\u042d\u041a\u0418\u041f\u0418\u0420\u041e\u0412\u041a\u0410 \u0421\u041f\u041e\u0420\u0422\u0418\u0412\u041d\u0410\u042f", "ID": "S597", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S598": { "URL": "\/catalog\/598\/", "NAME": "\u0412\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u044c\u043d\u0430\u044f \u044d\u043a\u0438\u043f\u0438\u0440\u043e\u0432\u043a\u0430", "ID": "S598", "IBLOCK_SECTION_ID": "S597", "SUBMENU": { "S599": { "URL": "\/catalog\/599\/", "NAME": "\u0412\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u044c\u043d\u0430\u044f \u0444\u043e\u0440\u043c\u0430", "ID": "S599", "IBLOCK_SECTION_ID": "S598" }, "S600": { "URL": "\/catalog\/600\/", "NAME": "\u0413\u043e\u043b\u044c\u0444\u044b \u0432\u043e\u043b\u0435\u0439\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S600", "IBLOCK_SECTION_ID": "S598" }, "S601": { "URL": "\/catalog\/601\/", "NAME": "\u041d\u0430\u043a\u043e\u043b\u0435\u043d\u043d\u0438\u043a\u0438, \u043d\u0430\u0440\u0443\u043a\u0430\u0432\u043d\u0438\u043a\u0438", "ID": "S601", "IBLOCK_SECTION_ID": "S598" } } }, "S602": { "URL": "\/catalog\/602\/", "NAME": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u0430\u044f \u043e\u0434\u0435\u0436\u0434\u0430", "ID": "S602", "IBLOCK_SECTION_ID": "S597", "SUBMENU": { "S603": { "URL": "\/catalog\/603\/", "NAME": "\u0411\u0435\u0439\u0441\u0431\u043e\u043b\u043a\u0438, \u0448\u0430\u043f\u043a\u0438", "ID": "S603", "IBLOCK_SECTION_ID": "S602" }, "S604": { "URL": "\/catalog\/604\/", "NAME": "\u041a\u043e\u0441\u0442\u044e\u043c\u044b, \u043a\u0443\u0440\u0442\u043a\u0438", "ID": "S604", "IBLOCK_SECTION_ID": "S602" }, "S605": { "URL": "\/catalog\/605\/", "NAME": "\u041d\u0430\u043f\u0443\u043b\u044c\u0441\u043d\u0438\u043a\u0438, \u043f\u043e\u0432\u044f\u0437\u043a\u0438 \u043d\u0430 \u0433\u043e\u043b\u043e\u0432\u0443", "ID": "S605", "IBLOCK_SECTION_ID": "S602" }, "S606": { "URL": "\/catalog\/606\/", "NAME": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438 \u0434\u043b\u044f \u0444\u0438\u0442\u043d\u0435\u0441\u0430", "ID": "S606", "IBLOCK_SECTION_ID": "S602" } } }, "S607": { "URL": "\/catalog\/607\/", "NAME": "\u0424\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u0430\u044f \u044d\u043a\u0438\u043f\u0438\u0440\u043e\u0432\u043a\u0430", "ID": "S607", "IBLOCK_SECTION_ID": "S597", "SUBMENU": { "S608": { "URL": "\/catalog\/608\/", "NAME": "\u0413\u0435\u0442\u0440\u044b", "ID": "S608", "IBLOCK_SECTION_ID": "S607" }, "S609": { "URL": "\/catalog\/609\/", "NAME": "\u041a\u0430\u043f\u0438\u0442\u0430\u043d\u0441\u043a\u0438\u0435 \u043f\u043e\u0432\u044f\u0437\u043a\u0438", "ID": "S609", "IBLOCK_SECTION_ID": "S607" }, "S610": { "URL": "\/catalog\/610\/", "NAME": "\u041c\u0430\u043d\u0438\u0448\u043a\u0438", "ID": "S610", "IBLOCK_SECTION_ID": "S607" }, "S611": { "URL": "\/catalog\/611\/", "NAME": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438 \u0432\u0440\u0430\u0442\u0430\u0440\u0441\u043a\u0438\u0435", "ID": "S611", "IBLOCK_SECTION_ID": "S607" }, "S612": { "URL": "\/catalog\/612\/", "NAME": "\u0424\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u0430\u044f \u0444\u043e\u0440\u043c\u0430", "ID": "S612", "IBLOCK_SECTION_ID": "S607" }, "S613": { "URL": "\/catalog\/613\/", "NAME": "\u0429\u0438\u0442\u043a\u0438 \u0444\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u044b\u0435", "ID": "S613", "IBLOCK_SECTION_ID": "S607" } } }, "S614": { "URL": "\/catalog\/614\/", "NAME": "\u0425\u043e\u043a\u043a\u0435\u0439\u043d\u0430\u044f \u044d\u043a\u0438\u043f\u0438\u0440\u043e\u0432\u043a\u0430", "ID": "S614", "IBLOCK_SECTION_ID": "S597", "SUBMENU": { "S615": { "URL": "\/catalog\/615\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u0430", "ID": "S615", "IBLOCK_SECTION_ID": "S614" }, "S616": { "URL": "\/catalog\/616\/", "NAME": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438", "ID": "S616", "IBLOCK_SECTION_ID": "S614" }, "S617": { "URL": "\/catalog\/617\/", "NAME": "\u0420\u0435\u0439\u0442\u0443\u0437\u044b", "ID": "S617", "IBLOCK_SECTION_ID": "S614" }, "S618": { "URL": "\/catalog\/618\/", "NAME": "\u0428\u043b\u0435\u043c\u044b", "ID": "S618", "IBLOCK_SECTION_ID": "S614" } } }, "S619": { "URL": "\/catalog\/619\/", "NAME": "\u042d\u043a\u0438\u043f\u0438\u0440\u043e\u0432\u043a\u0430 \u0434\u043b\u044f \u0440\u0435\u0433\u0431\u0438", "ID": "S619", "IBLOCK_SECTION_ID": "S597", "SUBMENU": { "S620": { "URL": "\/catalog\/620\/", "NAME": "\u0417\u0430\u0449\u0438\u0442\u0430", "ID": "S620", "IBLOCK_SECTION_ID": "S619" }, "S621": { "URL": "\/catalog\/621\/", "NAME": "\u0428\u043b\u0435\u043c\u044b", "ID": "S621", "IBLOCK_SECTION_ID": "S619" } } } } }, "S531": { "URL": "\/catalog\/531\/", "NAME": "\u0421\u041f\u041e\u0420\u0422\u0418\u0412\u041d\u0410\u042f \u041c\u0415\u0414\u0418\u0426\u0418\u041d\u0410", "ID": "S531", "IBLOCK_SECTION_ID": "S", "SUBMENU": { "S532": { "URL": "\/catalog\/532\/", "NAME": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b", "ID": "S532", "IBLOCK_SECTION_ID": "S531" }, "S533": { "URL": "\/catalog\/533\/", "NAME": "\u0414\u044b\u0445\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0442\u0440\u0435\u043d\u0430\u0436\u0435\u0440\u044b", "ID": "S533", "IBLOCK_SECTION_ID": "S531" }, "S534": { "URL": "\/catalog\/534\/", "NAME": "\u0422\u0435\u0439\u043f\u044b", "ID": "S534", "IBLOCK_SECTION_ID": "S531" } } } };
+    </script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/catalog-menu.js"></script>
+    <script src="js/catalog-menu-mobile.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="phone-wrap">
+                            <a href="tel:+74951083296"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495)
+                                108-32-96</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="user-wrap-top">
+                            <!--i class="fa fa-user" aria-hidden="true"></i>
+                            <ul class="user-field">
+                                <li><a href="/">Войти</a></li>
+                                <li>/</li>
+                                <li><a href="/">Регистрация</a></li>
+                            </ul-->
+                            <a class="message-user" href="/personal/messages/" data-title="У Вас 42 новых сообщения">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>42</span>
+                            </a>
+                            <button id="user-button">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <ul class="user-field">
+                                    <li class="dropdown">ИП Юркин Илья Сергеевич
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/">Заказы</a></li>
+                                            <li><a href="/">Избранное</a></li>
+                                            <li><a href="/">Скидки</a></li>
+                                            <li><a href="/">Лист ожидания</a></li>
+                                            <li><a href="/">Сменить пароль</a></li>
+                                            <li><a href="/">Выход</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+                        <div class="user-wrap-message">
+                            <ul class="user-field">
+                                <li>Согласно отчету по скидкам, Ваша текущая колонка Оптовая (руб)<br>Cрок действия
+                                    скидки не ограничен, <a style="font-weight: bold;"
+                                        href="/discounts/00002998.xls">подробнее см. отчет по скидкам</a><br>Сумма
+                                    заказа для перехода на колонку Опт 1 (руб): 100000 руб.<br>Если Вы сразу хотите
+                                    сформировать заказ по колонке отличной от текущей,
+                                    просьба связаться с Вашим менеджером-куратором по телефону или электронной почте.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="logo-top-wrap">
+                                    <a href="/">
+                                        <img src="images/logo.png" class="img-fluid" alt="BallMarket">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-none d-sm-block d-md-block d-lg-none col">
+                                <div class="search-form">
+                                    <form action="/search/index.php">
+                                        <div class="input-group">
+                                            <input name="" type="text" name="q" value="classic" class="form-control"
+                                                aria-label="" placeholder="Поиск по сайту.." />
+                                            <button name="s" type="submit" class="input-group-text" value="y"><i
+                                                    class="fa fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                    <a href='/faq/index.php?BID=15&ID=3917'>Помощь по поиску</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-none d-md-none d-lg-block col">
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="search-form">
+                                    <form action="/search/index.php">
+                                        <div class="input-group">
+                                            <input name="" type="text" name="q" value="classic" class="form-control"
+                                                aria-label="" placeholder="Поиск по сайту.." />
+                                            <button name="s" type="submit" class="input-group-text" value="y"><i
+                                                    class="fa fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                    <a href='/faq/index.php?BID=15&ID=3917'>Помощь по поиску</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="personal-cart">
+                                    <span class="icons"><img src="images/shopping-basket.png" class="img-fluid"
+                                            alt=""></span>
+                                    <a href="/">В корзине товаров <span>178</span> в кол-ве <span>178</span> единиц<br>
+                                        На сумму <span>42141 руб.</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-7 d-sm-block d-md-block d-lg-none">
+                        <div class="personal-cart">
+                            <span class="icons"><img src="images/shopping-basket.png" class="img-fluid" alt=""></span>
+                            <a href="/">В корзине товаров <span>178</span> в кол-ве <span>178</span> единиц<br>
+                                На сумму <span>42141 руб.</span></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="d-block d-sm-none d-md-none d-lg-none col-8">
+                                <div class="search-form">
+                                    <form action="/search/index.php">
+                                        <div class="input-group">
+                                            <input name="" type="text" name="q" value="classic" class="form-control"
+                                                aria-label="" placeholder="Поиск по сайту.." />
+                                            <button name="s" type="submit" class="input-group-text" value="y"><i
+                                                    class="fa fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                    <a href='/faq/index.php?BID=15&ID=3917'>Помощь по поиску</a>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-12 col-md-12 col-lg-12">
+                                <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
+
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav">
+                                            <li><a class="active" href="/">О компании</a></li>
+                                            <li><a class="new-items" href="/">Новинки</a></li>
+                                            <li> <a class="special-items" href="/"> Товары по спец. ценам</a></li>
+                                            <li> <a href="/">Заказы</a></li>
+                                            <li> <a href="/">Документы</a></li>
+                                            <li> <a href="/">Вопрос - Ответ</a></li>
+                                            <li> <a href="/">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="container">
+        <!--left menu and 2 slider-->
+        <div class="row">
+            <div class="d-block d-sm-block d-md-none col">
+                <!--Мобильная кнопка каталога-->
+                <div class="mobile-button-wrap">
+                    <button class="menu-catalog">
+                        <i class="fa fa-bars" aria-hidden="true"></i>каталог
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="home-page-menu-wrap">
+                    <!--Мобильная панель меню каталога-->
+                    <div class="mobile-header-panel">
+                        <span>Каталог</span><i class="fa fa-times" data-target="hidden-filters"></i>
+                    </div>
+                    <div id="catalog-menu">
+                        <div is="catalog-menu"></div>
+                    </div>
+                    <script type="text/javascript">
+                        var $catalogMenu = new Vue({ el: '#catalog-menu' });
+                    </script>
+                    <div id="catalog-menu-mobile">
+                        <div is="catalog-menu-mobile"></div>
+                    </div>
+                    <script type="text/javascript">
+                        var $catalogMenuMobile = new Vue({ el: '#catalog-menu-mobile' });
+                    </script>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9">
+                <div class="row">
+                    <div class="col">
+                        <div class="heading-page-wrap">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <h1>Список ваших заявок</h1>
+                                </div>
+                                <div class="col">
+                                    <div class="breadcrumbs-wrap">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="order-list">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Дата заказа</th>
+                                            <th>УПД</th>
+                                            <th>Сумма, Р</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>28.10.2022</td>
+                                            <td>№5465 от 23.08.2022</td>
+                                            <td>5640</td>
+                                            <td>
+                                                <div class="buttons-wrap">
+                                                    <div class="btn-wrap">
+                                                        <a href="/" class="btn all">Печать</a>
+                                                    </div>
+                                                    <div class="btn-wrap">
+                                                        <a href="/" class="btn all">Копировать</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>28.10.2022</td>
+                                            <td>№5465 от 23.08.2022</td>
+                                            <td>5640</td>
+                                            <td>
+                                                <div class="buttons-wrap">
+                                                    <div class="btn-wrap">
+                                                        <a href="/" class="btn all">Печать</a>
+                                                    </div>
+                                                    <div class="btn-wrap">
+                                                        <a href="/" class="btn all">Копировать</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>28.10.2022</td>
+                                            <td>№5465 от 23.08.2022</td>
+                                            <td>5640</td>
+                                            <td>
+                                                <div class="buttons-wrap">
+                                                    <div class="btn-wrap">
+                                                        <a href="/" class="btn all">Печать</a>
+                                                    </div>
+                                                    <div class="btn-wrap">
+                                                        <a href="/" class="btn all">Копировать</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="top-footer">
+                        <img src="images/logo-footer.png" class="img-fluid" alt="BallMarket">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <p class="title-block">Компания BALLMARKET</p>
+                    <ul>
+                        <li><a href="/">Корпоративные продажи</a></li>
+                        <li><a href="/">Обратная связь</a></li>
+                        <li><a href="/">Партнерам</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <p class="title-block">Покупателям</p>
+                    <ul>
+                        <li><a href="/">Доставка</a></li>
+                        <li><a href="/">Вопрос - Ответ</a></li>
+                        <li><a href="/">Способы оплаты</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <p class="title-block">Помощь</p>
+                    <ul>
+                        <li><a href="/">Как оформить заказ</a></li>
+                        <li><a href="/">Как работать с сайтом</a></li>
+                        <li><a href="/">Задать вопрос</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <p class="title-block">Оставайтесь на связи</p>
+                    <ul class="icon-wrap">
+                        <li><a href="/"><i class="fa fa-vk"></i></a></li>
+                        <li><a href="/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="/"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <a href="tel:+74951083296">ООО "БМ-РЕСТАРТ" +7 (495) 108-32-96</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключаем jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap-select.js"></script> -->
+
+    <!--Slick slider-->
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

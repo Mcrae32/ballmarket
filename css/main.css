@@ -1349,11 +1349,34 @@ li.dropdown:hover>.dropdown-menu {
 .reclamation .reclamation__button:active,
 .reclamation .btn:hover,
 .reclamation .btn:focus,
-.reclamation .btn:active {
+.reclamation .btn:active,
+.order-list .btn:hover,
+.order-list .btn:focus,
+.order-list .btn:active {
     margin: 0;
     color: #f3963e;
     background: white;
 }
+
+.order-list .buttons-wrap .btn-wrap {
+    margin-right: 15px;
+}
+.order-list .buttons-wrap .btn-wrap:last-child {
+    margin-right: 0px;
+}
+
+.order-list .table thead th {
+    border-top: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(34, 34, 34, 0.5);
+}
+.order-list .table tbody td {
+    vertical-align: middle;
+    font-weight: 700;
+}
+
 
 .number-of-goods {
     display: flex;
