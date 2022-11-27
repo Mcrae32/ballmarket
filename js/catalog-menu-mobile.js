@@ -33,44 +33,44 @@ Vue.component('catalog-menu-mobile', {
         </li>
     </ul>
     `,
-         data(){
-            return{
-                catalogMenuData: catalogMenuData,
-                isMobileVariant:false,
-                width:0
+    data() {
+        return {
+            catalogMenuData: catalogMenuData,
+            isMobileVariant: false,
+            width: 0
+        }
+    },
+    filters: {
+    },
+    created() {
+        window.addEventListener('resize', this.updateWidth);
+        this.updateWidth();
+    },
+    mounted() {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            this.isMobileVariant = true;
+        }
+    },
+    methods: {
+        updateWidth() {
+            this.width = window.innerWidth;
+            if (this.width <= 992) {
+                this.isMobileVariant = true;
+            } else {
+                this.isMobileVariant = false;
             }
         },
-        filters:{
-        },
-        created() {
-            window.addEventListener('resize', this.updateWidth);
-            this.updateWidth();
-        },
-        mounted(){
-             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-                 this.isMobileVariant = true;
-             }
-        },
-        methods: {
-            updateWidth() {
-                this.width = window.innerWidth;
-                if(this.width<=992){
-                    this.isMobileVariant = true;
-                }else{
-                    this.isMobileVariant = false;
-                }
-			},
-            showMobileSubMenu(item,event){
-                if(typeof(item.SELECTED)=="undefined"){
-                    Vue.set(item, 'SELECTED', false);
-                }
-                if(item.SELECTED){
-                    Vue.set(item, 'SELECTED', false);
-                }else{
-                    Vue.set(item, 'SELECTED', true);
-                }
+        showMobileSubMenu(item, event) {
+            if (typeof (item.SELECTED) == "undefined") {
+                Vue.set(item, 'SELECTED', false);
             }
-        },
-        computed: {},
-    }
+            if (item.SELECTED) {
+                Vue.set(item, 'SELECTED', false);
+            } else {
+                Vue.set(item, 'SELECTED', true);
+            }
+        }
+    },
+    computed: {},
+}
 );
