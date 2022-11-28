@@ -446,6 +446,7 @@
                                         position: relative;
                                         padding: 45px 0;
                                         transition: all 0.5s;
+                                        margin-bottom: 75px;
                                     }
 
                                     .tree>ul>li {
@@ -456,7 +457,7 @@
                                         list-style-type: none;
                                         float: left;
                                         position: relative;
-                                        padding: 15px 5px 0 20px;
+                                        padding: 15px 15px 0 17px;
                                         text-align: center;
                                         transition: all 0.5s;
                                     }
@@ -481,6 +482,10 @@
                                         height: 62px;
                                         z-index: -1;
                                     }
+                                    .arrow-top-left_bottom {
+                                        bottom: -87%;
+                                        left: 14%;
+                                    }
 
                                     .arrow-top-right {
                                         position: absolute;
@@ -490,6 +495,10 @@
                                         width: 113px;
                                         height: 62px;
                                         z-index: -1;
+                                    }
+                                    .arrow-top-right_bottom {
+                                        bottom: -87%;
+                                        right: 14%;
                                     }
 
                                     .arrow-bottom {
@@ -502,7 +511,7 @@
                                         z-index: -1;
                                     }
 
-                                    .arrow-right {
+                                    /* .arrow-right {
                                         position: absolute;
                                         top: calc(50% - 18px);
                                         right: -12%;
@@ -510,7 +519,7 @@
                                         width: 39px;
                                         height: 49px;
                                         z-index: -1;
-                                    }
+                                    } */
 
 
                                     .tree li a,
@@ -561,6 +570,16 @@
                                         .arrow-right {
                                             right: -31px;
                                         }
+
+                                        .arrow-top-right_bottom {
+                                            bottom: -87%;
+                                            right: 5%;
+                                        }
+
+                                        .arrow-top-left_bottom {
+                                            bottom: -87%;
+                                            left: 5%;
+                                        }
                                     }
 
                                     @media (max-width: 849px) {
@@ -585,6 +604,14 @@
                                         .arrow-top-right {
                                             right: -15%;
                                         }
+
+                                        .arrow-top-right_bottom {
+                                            right: 5%;
+                                        }
+
+                                        .arrow-top-left_bottom {
+                                            left: 5%;
+                                        }
                                     }
 
                                     @media (max-width: 767px) {
@@ -600,9 +627,19 @@
                                             bottom: -52%;
                                         }
 
+                                        .arrow-top-right_bottom {
+                                            right: 0%;
+                                            bottom: -72%;
+                                        }
+
                                         .arrow-top-left {
                                             left: -5%;
                                             bottom: -52%;
+                                        }
+
+                                        .arrow-top-left_bottom {
+                                            left: 0%;
+                                            bottom: -72%;
                                         }
 
                                         .tree li a,
@@ -612,6 +649,7 @@
 
                                         .tree ul {
                                             padding: 25px 0;
+                                            margin-bottom: 70px;
                                         }
 
                                         .tree li {
@@ -665,22 +703,20 @@
                                             <li>
                                                 <a href="tel:+74951083296" title="Позвонить нам">Позвонить нам <br /> +7
                                                     (495) 108-32-96</a>
-                                                <img class="arrow-right" src="images/block-sheme/arrow-right.jpg"
-                                                    alt="">
+                                                <!-- <img class="arrow-right" src="images/block-sheme/arrow-right.jpg"
+                                                    alt=""> -->
+                                                <img class="arrow-top-right arrow-top-right_bottom" src="images/block-sheme/arrow-top-right.png"
+                                                alt="">
                                             </li>
                                             <li>
                                                 <a href="#" title="Заполнить заявку на регистрацию">Заполнить заявку
                                                     на&nbsp;регистрацию</a>
-                                                <ul>
-                                                    <li>
-                                                        <span class="instruction-block">Стать зарегистрированным
-                                                            пользователем и выйти на&nbsp;новый уровень дохода</span>
-                                                        <img class="arrow-bottom"
-                                                            src="images/block-sheme/arrow-bottom.jpg" alt="">
-                                                    </li>
-                                                </ul>
+                                                <img class="arrow-top-left arrow-top-left_bottom" src="images/block-sheme/arrow-top-left.png"
+                                                alt="">
                                             </li>
                                         </ul>
+                                        <span class="instruction-block">Стать зарегистрированным
+                                            пользователем и выйти на&nbsp;новый уровень дохода</span>
                                     </li>
                                 </ul>
                             </div>
