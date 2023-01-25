@@ -15,8 +15,7 @@
 }
 
 a.reclamation__info {
-    display: inline-flex;
-    align-items: center;
+    display: inline-block;
     margin-bottom: 8px;
     font-weight: 100;
     color: rgb(132 132 132);
@@ -29,9 +28,9 @@ a.reclamation__info:active {
 }
 
 a.reclamation__info span {
+    display: inline-flex;
+    align-items: center;
     padding-left: 4px;
-    margin-top: -8px;
-    cursor: pointer;
 }
 
 button.btn.all.disabled {
