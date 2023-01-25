@@ -1,0 +1,40 @@
+.reclamation__description {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.reclamation__description h3 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.reclamation__description p {
+    margin-bottom: 6px;
+}
+
+a.reclamation__info {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 100;
+    color: rgb(132 132 132);
+}
+
+a.reclamation__info:hover,
+a.reclamation__info:focus,
+a.reclamation__info:active {
+    color:rgb(84, 84, 84);
+}
+
+a.reclamation__info span {
+    padding-left: 4px;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+button.btn.all.disabled {
+    cursor: no-drop;
+}
+
